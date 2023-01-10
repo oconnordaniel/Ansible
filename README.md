@@ -28,10 +28,17 @@ Apps:
 
 # Setup
 
-`sudo {{ package manager }} install python3 python3-pip python3-venv` 
+## Setup python and ansible
 
-`python3 -m venv ansible`
+```
+sudo {{ package manager }} install python3 python3-pip python3-venv
+python3 -m venv ansible
+source ansible/bin/activate
+python3 -m pip install ansible
+```
 
-`source ansible/bin/activate`
+## Gen SSH keys to be used
 
-`python3 -m pip install ansible`
+```
+ssh-keygen -t ed_25519 -C ansible-key -f ./files/id_ed25519_ansible
+```
