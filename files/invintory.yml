@@ -1,0 +1,51 @@
+all: 
+  hosts: 
+    dans-desktop.lan: 
+      ansible_become_pass: '{{ dans_desktop_pass }}'
+    dans-server.lan: 
+      ansible_become_pass: '{{ dans_server_pass }}'
+    dans-mini.lan: 
+      ansible_become_pass: '{{ dans_mini_pass }}'
+    dans-pisrv.lan:
+      ansible_become_pass: '{{ dans_pisrv_pass }}'
+    dans-macbook.lan:
+      ansible_become_pass: '{{ dans_mac_pass }}'
+    dans-supermicro.lan:
+      ansible_become_pass: '{{ dans_supermicro_pass }}'
+    dans-dell.lan:
+      ansible_become_pass: '{{ dans_dell_pass }}'
+      
+  vars: 
+    ansible_user: dan
+    ansible_connection: ssh
+
+  children:
+    servers:
+      hosts:
+        dans-server.lan:
+        dans-mini.lan:
+        dans-pisrv.lan:
+        dans-supermicro.lan:
+        dans-dell.lan:
+
+    hypervisor:
+      hosts:
+        dans-mini.lan:
+        dans-supermicro.lan:
+
+    docker:
+      hosts: 
+        dans-mini.lan:
+        dans-docker.lan:
+
+    pisrv:
+      hosts:
+        dans-pisrv.lan:
+
+    desktop:
+      hosts:
+        dans-desktop.lan:
+
+    macbook:
+      hosts:
+        dans-macbook.lan:
