@@ -1,0 +1,41 @@
+---
+# tasks file for plays/roles/ssh
+
+# Ensure user/.ssh folder exits
+- name: Make dan/.ssh folder if needed
+  file: 
+    path: /home/{{ main_user }}/.ssh
+    owner: dan
+    group: dan
+    mode: 0700
+    state: directory
+
+# Copy auth_keys 
+- name: Copy the authorized_keys file
+  copy: 
+    src: authorized_keys 
+    dest: /home/{{ main_user }}/.ssh/authorized_keys
+    owner: dan
+    group: dan
+    mode: 0400
+  notify: restart sshd
+
+# Copy ssh_config
+- name: Copy the ssh_config file
+  become: True
+  copy: 
+    src: ssh_config.conf
+    dest: /etc/ssh/ssh_config.d/hard.conf
+    owner: root
+    group: root
+    mode: 0444
+
+# Copy sshd_config
+- name: Copy the sshd_config file
+  become: True
+  copy: 
+    src: sshd_config.conf
+    dest: /etc/ssh/sshd_config.d/hard.conf
+    owner: root
+    group: root
+    mode: 0411

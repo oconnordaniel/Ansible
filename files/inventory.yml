@@ -49,3 +49,7 @@ all:
     macbook:
       hosts:
         dans-macbook.lan:
+
+    test:
+      hosts: 
+        dans-mini.lan:

@@ -1,0 +1,6 @@
+- hosts: test
+  roles:
+    - ssh
+  tags: ssh
+  vars_files:
+    - ../files/variables.yml

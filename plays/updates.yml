@@ -1,6 +1,13 @@
 ---
+
+- hosts: all
+  tasks: 
+  - name: Gather facts up front
+    ansible.builtin.gather_facts:
+
 - hosts: all
   become: true
+  gather_facts: false
   tasks: 
   - name: Update apt
     apt:
@@ -11,6 +18,7 @@
 
 - hosts: all
   become: true
+  gather_facts: false
   tasks: 
   - name: Upgrade dnf
     ansible.builtin.dnf:
@@ -20,6 +28,7 @@
 
 - hosts: all
   become: true
+  gather_facts: false
   tasks: 
   - name: Update pacman 
     community.general.pacman:
@@ -29,6 +38,7 @@
 
 - hosts: macbook
   become: true
+  gather_facts: false
   tasks: 
   - name: Update brew
     community.general.homebrew:

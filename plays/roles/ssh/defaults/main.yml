@@ -1,0 +1,3 @@
+---
+# defaults file for plays/roles/ssh
+main_user: dan
