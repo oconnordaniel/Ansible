@@ -43,3 +43,5 @@ python3 -m pip install ansible
 ssh-keygen -t ed_25519 -C ansible-key -f ./files/id_ed25519_ansible
 cat ./files/id_ed25519_ansible.pub >> plays/roles/ssh/files/authorized_keys 
 ```
+
+You should also cat your .pub keys for whatever users / computers you want into this authorized_keys file. Here I manage what computers are allowed to log into any of my computers. The ssh role will disable password ssh login for security. 
