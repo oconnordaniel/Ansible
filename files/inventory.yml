@@ -16,7 +16,7 @@ all:
       ansible_become_pass: '{{ dans_dell_pass }}'
       
   vars: 
-    ansible_user: dan
+    ansible_user: '{{ main_user }}'
     ansible_connection: ssh
 
   children:
@@ -49,3 +49,7 @@ all:
     macbook:
       hosts:
         dans-macbook.lan:
+
+    test:
+      hosts: 
+        dans-mini.lan:

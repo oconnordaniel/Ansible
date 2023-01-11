@@ -1,0 +1,19 @@
+---
+# tasks file for plays/roles/ssh
+
+# Restart sshd handler
+
+# Ensure user/.ssh folder exits
+- name: Make dan/.ssh folder if needed
+  file: 
+    path: /home/{{ main_user }}/.ssh
+    owner: dan
+    group: dan
+    mode: 0700
+    state: directory
+
+# Copy auth_keys 
+
+# Copy ssh_config
+
+# Copy sshd_config

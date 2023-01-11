@@ -41,4 +41,5 @@ python3 -m pip install ansible
 
 ```
 ssh-keygen -t ed_25519 -C ansible-key -f ./files/id_ed25519_ansible
+cat ./files/id_ed25519_ansible.pub >> plays/roles/ssh/files/authorized_keys 
 ```
