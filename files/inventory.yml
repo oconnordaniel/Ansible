@@ -1,7 +1,7 @@
 all: 
   hosts: 
-    dans-desktop.lan: 
-      ansible_become_pass: '{{ dans_desktop_pass }}'
+#    dans-desktop.lan: 
+#      ansible_become_pass: '{{ dans_desktop_pass }}'
     dans-server.lan: 
       ansible_become_pass: '{{ dans_server_pass }}'
     dans-mini.lan: 
@@ -25,7 +25,7 @@ all:
         dans-server.lan:
         dans-mini.lan:
         dans-pisrv.lan:
-        dans-supermicro.lan:
+#        dans-supermicro.lan:
         dans-dell.lan:
 
     hypervisor:
@@ -33,10 +33,10 @@ all:
         dans-mini.lan:
         dans-supermicro.lan:
 
-    docker:
-      hosts: 
-        dans-mini.lan:
-        dans-docker.lan:
+#    docker:
+#      hosts: 
+#        dans-mini.lan:
+#        dans-docker.lan:
 
     pisrv:
       hosts:

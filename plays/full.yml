@@ -1,4 +1,4 @@
-- hosts: test
+- hosts: servers
   roles:
     - ssh
   tags: ssh
