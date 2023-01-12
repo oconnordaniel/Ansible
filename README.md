@@ -11,11 +11,7 @@ Home for all my ansible plays and roles. Mostly for managing my homelab.
 - Setup Docker host
 - Setup file server
 
-Plays: 
-- updates
-- server packages
-- desktop packages / terminal 
-- security
+Plays:
     - ssh keys
     - users and passwords
     - nagios agent
