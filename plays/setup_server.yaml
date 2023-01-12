@@ -1,0 +1,23 @@
+---
+
+# Updates
+- hosts: servers
+  tasks:
+    
+# Default packages
+
+# Maintainance
+  - name: Set timezone to America/Denver
+    become: true
+    community.general.timezone:
+      name: "{{ timezone }}"
+
+# Add main user to system
+
+# Security
+## SSH
+## CrowdSec
+## Nagios Agent
+
+    
+  

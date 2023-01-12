@@ -17,7 +17,7 @@
     dest: /home/{{ main_user }}/.ssh/authorized_keys
     owner: dan
     group: dan
-    mode: 0400
+    mode: 0500
   notify: restart sshd
 
 # Copy ssh_config
