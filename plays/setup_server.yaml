@@ -6,13 +6,39 @@
   
 # Updates
   tasks:
-  - name: Run package updates
+  - name: Run dnf package updates
+    become: true
     ansible.builtin.dnf:
       name: "*"
       state: latest    
     when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
-    
+
+  - name: Run dnf package auto remove
+    become: true
+    ansible.builtin.dnf:
+      autoremove: true
+    when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
+
+  - name: Update apt
+    become: true
+    apt:
+      update_cache: yes
+      cache_valid_time: 3600
+      upgrade: yes
+      autoremove: yes
+    when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian' 
+
+
 # Default packages
+  - name:
+    become: true
+    package: 
+      name: 
+        - vim
+        - htop
+        - tree
+        - tmux
+      state: latest
 
 # Maintainance
   - name: Set timezone to America/Denver
@@ -21,6 +47,27 @@
       name: "{{ timezone }}"
 
 # Add main user to system
+  - name: Add dan user Ubuntu/Debian
+    become: true
+    user: 
+      name: dan
+      groups: 
+        - sudo
+      append: yes
+      password: '{{ pass_hash }}' 
+      create_home: true
+    when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian' 
+
+  - name: Add dan user RHEL
+    become: true
+    user: 
+      name: dan
+      groups: 
+        - wheel
+      append: yes
+      password: '{{ pass_hash }}' 
+      create_home: true
+    when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
 
 # Security
 ## SSH
