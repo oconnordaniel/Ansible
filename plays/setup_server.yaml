@@ -71,6 +71,10 @@
 
 # Security
 ## SSH
+  - name: Include ssh role
+    include_role:
+      name: ssh
+
 ## CrowdSec
 ## Tailscale
 ## Nagios Agent
