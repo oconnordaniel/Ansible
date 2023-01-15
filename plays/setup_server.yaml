@@ -1,8 +1,16 @@
 ---
 
-# Updates
 - hosts: servers
+  vars_files:
+    - ../files/variables.yml
+  
+# Updates
   tasks:
+  - name: Run package updates
+    ansible.builtin.dnf:
+      name: "*"
+      state: latest    
+    when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
     
 # Default packages
 
