@@ -25,7 +25,7 @@ all:
         dans-server.lan:
         dans-mini.lan:
         dans-pisrv.lan:
-#        dans-supermicro.lan:
+        dans-supermicro.lan:
         dans-dell.lan:
 
     hypervisor:
