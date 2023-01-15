@@ -1,0 +1,63 @@
+---
+# tasks file for crowdsec
+- name: install required packages
+  become: true
+  yum:
+    name:
+      # - pygpgme
+      - python3-dnf 
+      - yum-utils
+    state: present 
+  when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
+
+- name: add crowdsec apt-key
+  become: true
+  apt_key: 
+    url: https://packagecloud.io/crowdsec/crowdsec/gpgkey
+    state: present
+  when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian' 
+
+- name: add crowdsec apt repository
+  become: true
+  apt_repository: 
+    repo: deb https://packagecloud.io/crowdsec/crowdsec/{{ ansible_distribution|lower }}/ {{ ansible_distribution_release }} main
+    state: present 
+    filename: crowdsec
+    update_cache: yes
+  when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian' 
+
+- name: add crowdsec apt repository
+  become: true
+  yum_repository:
+    name: crowdsec
+    description: crowdsec repository
+    #gpgkey: https://packagecloud.io/crowdsec/crowdsec/gpgkey
+    baseurl: https://packagecloud.io/crowdsec/crowdsec/el/$releasever/$basearch/
+    state: present
+    file: crowdsec
+  when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
+
+#- name: curl croudsec script
+#  become: true
+#  ansible.builtin.get_url:
+#    url: https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.rpm.sh 
+#    dest: /tmp/script.rpm.sh
+#    mode: '0550'
+
+#- name: Run crowdsec script
+#  become: true
+#  command: sudo bash /tmp/script.rpm.sh 
+    
+
+- name: Install crowdsec
+  become: true
+  ansible.builtin.dnf:
+    update_cache: true
+    name: 
+      - crowdsec
+    state: present
+  register: crowdsec_installed
+
+- name: Add crowdsec to account
+  command: "sudo cscli console enroll {{ crowdsec_key }}"
+  when: crowdsec_installed == true

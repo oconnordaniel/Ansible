@@ -1,32 +1,31 @@
 ---
-
 - hosts: servers
   vars_files:
     - ../files/variables.yml
-  
-# Updates
+
+  # Updates
   tasks:
-  - name: Run dnf package updates
-    become: true
-    ansible.builtin.dnf:
-      name: "*"
-      state: latest    
-    when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
+    - name: Run dnf package updates
+      become: true
+      ansible.builtin.dnf:
+        name: "*"
+        state: latest
+      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'
 
-  - name: Run dnf package auto remove
-    become: true
-    ansible.builtin.dnf:
-      autoremove: true
-    when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
+    - name: Run dnf package auto remove
+      become: true
+      ansible.builtin.dnf:
+        autoremove: true
+      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'
 
-  - name: Update apt
-    become: true
-    apt:
-      update_cache: yes
-      cache_valid_time: 3600
-      upgrade: yes
-      autoremove: yes
-    when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian' 
+    - name: Update apt
+      become: true
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+        upgrade: yes
+        autoremove: yes
+      when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
 
 
 # Default packages
@@ -39,56 +38,63 @@
         - tree
         - tmux
         - ufw
+        - curl
       state: latest
 
-# Maintainance
-  - name: Set timezone to America/Denver
-    become: true
-    community.general.timezone:
-      name: "{{ timezone }}"
+    # Maintainance
+    - name: Set timezone to America/Denver
+      become: true
+      community.general.timezone:
+        name: "{{ timezone }}"
 
-# Add main user to system
-  - name: Add '{{ main_user }}' user Ubuntu/Debian
-    become: true
-    user: 
-      name: '{{ main_user }}'
-      groups: 
-        - sudo
-      append: yes
-      password: '{{ pass_hash }}' 
-      create_home: true
-    when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian' 
+    # Add main user to system
+    - name: Add '{{ main_user }}' user Ubuntu/Debian
+      become: true
+      user:
+        name: "{{ main_user }}"
+        groups:
+          - sudo
+        append: yes
+        password: "{{ pass_hash }}"
+        create_home: true
+      when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
 
-  - name: Add '{{ main_user }}' user RHEL
-    become: true
-    user: 
-      name: '{{ main_user }}'
-      groups: 
-        - wheel
-      append: yes
-      password: '{{ pass_hash }}' 
-      create_home: true
-    when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
+    - name: Add '{{ main_user }}' user RHEL
+      become: true
+      user:
+        name: "{{ main_user }}"
+        groups:
+          - wheel
+        append: yes
+        password: "{{ pass_hash }}"
+        create_home: true
+      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'
 
-# Security
-## SSH
-  - name: Include ssh role
-    include_role:
-      name: ssh
-    tags: ssh
+    # Security
+    ## SSH
+    - name: Include ssh role
+      include_role:
+        name: ssh
+      tags: ssh
 
-## UFW
-  - name: Include ufw role
-    include_role:
-      name: ufw
-    tags: ufw 
-        
-## Observium
-  - name: Include observium role
-    include_role:
-      name: observium
-    tags: observium
-    
+    ## UFW
+    - name: Include ufw role
+      include_role:
+        name: ufw
+      tags: ufw
+
+    ## Observium
+    - name: Include observium role
+      include_role:
+        name: observium
+      tags: observium
+
 ## CrowdSec
+  - name: Include crowdsec role
+    include_role:
+      name: crowdsec
+
+
+
 ## Tailscale
 ## Nagios Agent
