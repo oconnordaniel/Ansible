@@ -47,10 +47,10 @@
       name: "{{ timezone }}"
 
 # Add main user to system
-  - name: Add dan user Ubuntu/Debian
+  - name: Add '{{ main_user }}' user Ubuntu/Debian
     become: true
     user: 
-      name: dan
+      name: '{{ main_user }}'
       groups: 
         - sudo
       append: yes
@@ -58,10 +58,10 @@
       create_home: true
     when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian' 
 
-  - name: Add dan user RHEL
+  - name: Add '{{ main_user }}' user RHEL
     become: true
     user: 
-      name: dan
+      name: '{{ main_user }}'
       groups: 
         - wheel
       append: yes
