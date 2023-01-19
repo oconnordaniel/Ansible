@@ -38,6 +38,7 @@
         - htop
         - tree
         - tmux
+        - ufw
       state: latest
 
 # Maintainance
@@ -74,7 +75,20 @@
   - name: Include ssh role
     include_role:
       name: ssh
+    tags: ssh
 
+## UFW
+  - name: Include ufw role
+    include_role:
+      name: ufw
+    tags: ufw 
+        
+## Observium
+  - name: Include observium role
+    include_role:
+      name: observium
+    tags: observium
+    
 ## CrowdSec
 ## Tailscale
 ## Nagios Agent

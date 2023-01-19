@@ -14,7 +14,9 @@ all:
       ansible_become_pass: '{{ dans_supermicro_pass }}'
     dans-dell.lan:
       ansible_become_pass: '{{ dans_dell_pass }}'
-      
+    10.10.10.211:
+      ansible_become_pass: '{{ dans_dell_pass }}'
+
   vars: 
     ansible_user: dan
     ansible_connection: ssh
@@ -27,6 +29,7 @@ all:
         dans-pisrv.lan:
         dans-supermicro.lan:
         dans-dell.lan:
+        10.10.10.211:
 
     hypervisor:
       hosts:

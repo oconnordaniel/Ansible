@@ -1,0 +1,8 @@
+---
+# handlers file for observium
+
+- name: restart snmp
+  become: true
+  service: 
+    name: snmpd
+    state: restarted
