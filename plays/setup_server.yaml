@@ -1,9 +1,10 @@
 ---
+
 - hosts: servers
   vars_files:
     - ../files/variables.yml
 
-  # Updates
+# Updates
   tasks:
     - name: Run dnf package updates
       become: true
@@ -41,13 +42,13 @@
           - curl
         state: latest
 
-    # Maintainance
+# Maintainance
     - name: Set timezone to America/Denver
       become: true
       community.general.timezone:
         name: "{{ timezone }}"
 
-    # Add main user to system
+# Add main user to system
     - name: Add '{{ main_user }}' user Ubuntu/Debian
       become: true
       user:
@@ -70,20 +71,20 @@
         create_home: true
       when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'
 
-    # Security
-    ## SSH
+# Security
+## SSH
     - name: Include ssh role
       include_role:
         name: ssh
       tags: ssh
 
-    ## UFW
+## UFW
     - name: Include ufw role
       include_role:
         name: ufw
       tags: ufw
 
-    ## Observium
+## Observium
     - name: Include observium role
       include_role:
         name: observium

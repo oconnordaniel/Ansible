@@ -3,4 +3,4 @@
 - name: reload ufw
   become: true
   community.general.ufw:
-    state: reload
+    state: reloaded

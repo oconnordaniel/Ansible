@@ -31,6 +31,20 @@
   notify: reload ufw
   tags: ufw 
 
+- name: Allow 9090 for cockpit admin center on fedora
+  become: true
+  community.general.ufw:
+    rule: allow
+    to_port: 9090
+    src: '{{ item }}'
+    proto: tcp
+  loop:
+    - 10.10.10.0/24
+    - 10.10.1.0/24
+    - 100.0.0.0/8
+  notify: reload ufw
+  tags: ufw 
+
 - name: enable ufw
   become: true
   ansible.builtin.systemd:
