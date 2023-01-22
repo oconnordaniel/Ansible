@@ -29,17 +29,17 @@
 
 
 # Default packages
-  - name:
-    become: true
-    package: 
-      name: 
-        - vim
-        - htop
-        - tree
-        - tmux
-        - ufw
-        - curl
-      state: latest
+    - name:
+      become: true
+      package: 
+        name: 
+          - vim
+          - htop
+          - tree
+          - tmux
+          - ufw
+          - curl
+        state: latest
 
     # Maintainance
     - name: Set timezone to America/Denver
@@ -90,9 +90,9 @@
       tags: observium
 
 ## CrowdSec
-  - name: Include crowdsec role
-    include_role:
-      name: crowdsec
+    - name: Include crowdsec role
+      include_role:
+        name: crowdsec
 
 
 
