@@ -16,6 +16,14 @@ all:
       ansible_become_pass: '{{ dans_dell_pass }}'
 #    10.10.10.211:
 #      ansible_become_pass: '{{ dans_dell_pass }}'
+    dans-nagios-xi.lan:
+      ansible_become_pass: '{{ dans_dell_pass }}'
+    # test rocky
+    10.10.10.254:
+      ansible_become_pass: '{{ dans_dell_pass }}'
+    # test ubnt
+    10.10.10.253:
+      ansible_become_pass: '{{ dans_dell_pass }}'
 
   vars: 
     ansible_user: dan
@@ -27,9 +35,10 @@ all:
         dans-server.lan:
         dans-mini.lan:
         dans-pisrv.lan:
- #       dans-supermicro.lan:
+#        dans-supermicro.lan:
         dans-dell.lan:
-#      10.10.10.211:
+#        10.10.10.211:
+        dans-nagios-xi.lan:
 
     hypervisor:
       hosts:
@@ -55,4 +64,5 @@ all:
 
     test:
       hosts: 
-        dans-mini.lan:
+        10.10.10.253:
+          
