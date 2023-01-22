@@ -9,12 +9,12 @@
   when: ansible_distribution == "Debian" and ansible_architecture == "x86_64"
 
 # see notes for fixing script: https://github.com/NagiosEnterprises/automation/issues/5 
-#
+
 - name: Download NCPA (Ubuntu 32)
   get_url: url=https://assets.nagios.com/downloads/ncpa/ncpa-latest.i386.deb dest=/tmp/ncpa.deb
   when: ansible_distribution == "Ubuntu" and ansible_architecture == "i386"
 - name: Download NCPA (Ubuntu 64)
-  get_url: url=https://assets.nagios.com/downloads/ncpa/ncpa-latest.amd64.deb dest=/tmp/ncpa.deb
+  get_url: url=https://assets.nagios.com/downloads/ncpa/ncpa-2.4.0.u22.amd64.deb dest=/tmp/ncpa.deb
   when: ansible_distribution == "Ubuntu" and ansible_architecture == "x86_64"
 
 - name: Download NCPA (RedHat & CentOS 32)
