@@ -6,18 +6,28 @@
 
 # Updates
   tasks:
+    - name: Add EPEL to RHEL derivitives
+      become: True
+      ansible.builtin.command: dnf config-manager --set-enabled crb
+      ansible.builtin.command: dnf install epel-release
+      when: ansible_distribution == "Rocky"
+
+# https://docs.fedoraproject.org/en-US/epel/
+
+
+
     - name: Run dnf package updates
       become: true
       ansible.builtin.dnf:
         name: "*"
         state: latest
-      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'
+      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' or ansible_distribution == "Rocky"
 
     - name: Run dnf package auto remove
       become: true
       ansible.builtin.dnf:
         autoremove: true
-      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'
+      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' or ansible_distribution == "Rocky"
 
     - name: Update apt
       become: true
@@ -69,7 +79,7 @@
         append: yes
         password: "{{ pass_hash }}"
         create_home: true
-      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'
+      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' or ansible_distribution == "Rocky"
 
 # Security
 ## SSH
