@@ -50,6 +50,8 @@
           - tmux
           - ufw
           - curl
+          - avahi-daemon
+          - qemu-guest-agent
         state: latest
 
 # Maintainance
