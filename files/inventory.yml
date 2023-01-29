@@ -1,22 +1,29 @@
 all: 
   hosts: 
-    dans-desktop.lan: 
+    dans-desktop.lan: # Fedora KDE 37 
       ansible_become_pass: '{{ dans_desktop_pass }}'
-    dans-server.lan: 
+    dans-server.lan: # Ubuntu srv 22.04
+      ansible_user: dan 
       ansible_become_pass: '{{ dans_server_pass }}'
-    dans-mini.lan: 
+    dans-mini.lan: # Ubuntu ser 22.04
+      ansible_user: dan 
       ansible_become_pass: '{{ dans_mini_pass }}'
-    dans-pisrv.lan:
+    dans-pisrv.lan: # Debian 11 bullseye
       ansible_become_pass: '{{ dans_pisrv_pass }}'
-    dans-macbook.lan:
+    dans-macbook.lan: # macOS Ventura
       ansible_become_pass: '{{ dans_mac_pass }}'
-    dans-proxmox.lan:
+    dans-proxmox.lan: # Debian 11 bullseye
       ansible_become_pass: '{{ dans_prox_pass }}'
       ansible_user: root
-    dans-dell.lan:
+    dans-dell.lan: # Fedora server 37
       ansible_become_pass: '{{ dans_dell_pass }}'
-    dans-nagios.lan:
-      ansible_become_pass: '{{ dans_dell_pass }}'
+    dans-nagios.lan: # Ubuntu srv 22.04
+      ansible_become_pass: '{{ dans_nagios_pass }}'
+    dans-observium.lan: # Ubuntu srv 22.04
+      ansible_become_pass: '{{ dans_observium_pass }}'
+    dans-openstack.lan: # Ubuntu srv 22.04
+      ansible_become_pass: '{{ dans_openstack_pass }}'
+      ansible_user: dan-admin 
 
   vars: 
     ansible_user: dan
@@ -30,6 +37,8 @@ all:
         dans-pisrv.lan:
         dans-nagios.lan:
         dans-proxmox.lan:
+        dans-openstack.lan:
+        dans-observium.lan:
 
     hypervisor:
       hosts:

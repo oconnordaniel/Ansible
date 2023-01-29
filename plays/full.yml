@@ -5,12 +5,12 @@
   vars_files:
     - ../files/variables.yml
       
-- hosts: servers
-  roles: 
-    - role: ncpa_install_linux
-    - role: register_with_xi
-    - role: xi_apply_config
-  tags: nagios
-  vars_files:
-    - ../files/variables.yml
+#- hosts: servers
+#  roles: 
+#    - role: ncpa_install_linux
+#    - role: register_with_xi
+#    - role: xi_apply_config
+#  tags: nagios
+#  vars_files:
+#    - ../files/variables.yml
  

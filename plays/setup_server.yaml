@@ -72,16 +72,16 @@
         create_home: true
       when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
 
-    - name: Add '{{ main_user }}' user RHEL
-      become: true
-      user:
-        name: "{{ main_user }}"
-        groups:
-          - wheel
-        append: yes
-        password: "{{ pass_hash }}"
-        create_home: true
-      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' or ansible_distribution == "Rocky"
+#    - name: Add '{{ main_user }}' user RHEL
+#      become: true
+#      user:
+#        name: "{{ main_user }}"
+#        groups:
+#          - wheel
+#        append: yes
+#        password: "{{ pass_hash }}"
+#        create_home: true
+#      when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' or ansible_distribution == "Rocky"
 
 # Security
 ## SSH
@@ -97,15 +97,15 @@
       tags: ufw
 
 ## Observium
-    - name: Include observium role
-      include_role:
-        name: observium
-      tags: observium
+#    - name: Include observium role
+#      include_role:
+#        name: observium
+#      tags: observium
 
 ## CrowdSec
-    - name: Include crowdsec role
-      include_role:
-        name: crowdsec
+#    - name: Include crowdsec role
+#      include_role:
+#        name: crowdsec
 
 
 
