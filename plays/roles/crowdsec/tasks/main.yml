@@ -48,7 +48,6 @@
 #  become: true
 #  command: sudo bash /tmp/script.rpm.sh 
     
-
 - name: Install crowdsec
   become: true
   ansible.builtin.dnf:
@@ -57,7 +56,8 @@
       - crowdsec
     state: present
   register: crowdsec_installed
+  when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
 
-- name: Add crowdsec to account
-  command: "sudo cscli console enroll {{ crowdsec_key }}"
-  when: crowdsec_installed == true
+#- name: Add crowdsec to account
+#  command: "sudo cscli console enroll {{ crowdsec_key }}"
+#  when: crowdsec_installed == true

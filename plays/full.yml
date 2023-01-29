@@ -14,3 +14,16 @@
 #  vars_files:
 #    - ../files/variables.yml
  
+- hosts: all
+  roles: 
+    - crowdsec
+  tags: crowdsec
+  vars_files:
+    - ../files/variables.yml
+ 
+- hosts: nas
+  roles: 
+    - nas
+  vars_files:
+     - ../files/vars.yaml
+  tags: nas

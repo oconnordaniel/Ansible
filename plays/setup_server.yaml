@@ -103,9 +103,9 @@
 #      tags: observium
 
 ## CrowdSec
-#    - name: Include crowdsec role
-#      include_role:
-#        name: crowdsec
+    - name: Include crowdsec role
+      include_role:
+        name: crowdsec
 
 
 
