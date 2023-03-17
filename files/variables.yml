@@ -1,4 +1,5 @@
 main_user: dan
 timezone: "America/Denver"
 # timezone: "UTC"
+xi_ip: 'dans-nagios.lan'
 

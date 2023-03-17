@@ -1,0 +1,34 @@
+---
+# tasks file for observium
+
+- name: Install snmp
+  become: true
+  apt:
+    name: snmp
+    state: present
+  when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian' 
+  tags: observium
+
+- name: Install net-snmp
+  become: true
+  dnf: 
+    name: net-snmp
+    state: present
+  when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
+  tags: observium
+
+- name: Copy snmp config file
+  become: true
+  ansible.builtin.copy:
+    src: snmpd.conf
+    dest: /etc/snmp/snmpd.conf
+    owner: root
+    group: root
+    mode: '0600'
+  tags: observium
+  notify: restart snmp
+
+- name: Include ufw
+  include_tasks: ufw.yml
+  tags: observium
+  

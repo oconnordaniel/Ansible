@@ -1,21 +1,22 @@
 all: 
   hosts: 
-#    dans-desktop.lan: 
-#      ansible_become_pass: '{{ dans_desktop_pass }}'
-    dans-server.lan: 
+    dans-desktop.lan: # Fedora KDE 37 
+      ansible_become_pass: '{{ dans_desktop_pass }}'
+    dans-server.lan: # Ubuntu srv 22.04
+      ansible_user: dan 
       ansible_become_pass: '{{ dans_server_pass }}'
-    dans-mini.lan: 
+    dans-mini.lan: # Ubuntu ser 22.04
+      ansible_user: dan 
       ansible_become_pass: '{{ dans_mini_pass }}'
-    dans-pisrv.lan:
+    dans-pisrv.lan: # Debian 11 bullseye
       ansible_become_pass: '{{ dans_pisrv_pass }}'
-    dans-macbook.lan:
+    dans-macbook.lan: # macOS Ventura
       ansible_become_pass: '{{ dans_mac_pass }}'
-    dans-supermicro.lan:
-      ansible_become_pass: '{{ dans_supermicro_pass }}'
-    dans-dell.lan:
+    dans-proxmox.lan: # Debian 11 bullseye
+      ansible_become_pass: '{{ dans_prox_pass }}'
+      ansible_user: root
+    dans-dell.lan: # Fedora server 37
       ansible_become_pass: '{{ dans_dell_pass }}'
-    10.10.10.211:
-      ansible_become_pass: '{{ dans_server_pass }}'
 
   vars: 
     ansible_user: dan
@@ -27,19 +28,10 @@ all:
         dans-server.lan:
         dans-mini.lan:
         dans-pisrv.lan:
-        dans-supermicro.lan:
-        dans-dell.lan:
-        10.10.10.211:
 
     hypervisor:
       hosts:
         dans-mini.lan:
-        dans-supermicro.lan:
-
-#    docker:
-#      hosts: 
-#        dans-mini.lan:
-#        dans-docker.lan:
 
     pisrv:
       hosts:
@@ -52,7 +44,3 @@ all:
     macbook:
       hosts:
         dans-macbook.lan:
-
-    test:
-      hosts: 
-        dans-mini.lan:

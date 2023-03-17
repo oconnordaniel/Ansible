@@ -4,3 +4,26 @@
   tags: ssh
   vars_files:
     - ../files/variables.yml
+      
+#- hosts: servers
+#  roles: 
+#    - role: ncpa_install_linux
+#    - role: register_with_xi
+#    - role: xi_apply_config
+#  tags: nagios
+#  vars_files:
+#    - ../files/variables.yml
+ 
+- hosts: all
+  roles: 
+    - crowdsec
+  tags: crowdsec
+  vars_files:
+    - ../files/variables.yml
+ 
+- hosts: nas
+  roles: 
+    - nas
+  vars_files:
+     - ../files/vars.yaml
+  tags: nas

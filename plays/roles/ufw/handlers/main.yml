@@ -1,0 +1,6 @@
+---
+# handlers file for ufw
+- name: reload ufw
+  become: true
+  community.general.ufw:
+    state: reloaded
