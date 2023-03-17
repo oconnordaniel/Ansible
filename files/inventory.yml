@@ -17,13 +17,6 @@ all:
       ansible_user: root
     dans-dell.lan: # Fedora server 37
       ansible_become_pass: '{{ dans_dell_pass }}'
-    dans-nagios.lan: # Ubuntu srv 22.04
-      ansible_become_pass: '{{ dans_nagios_pass }}'
-    dans-observium.lan: # Ubuntu srv 22.04
-      ansible_become_pass: '{{ dans_observium_pass }}'
-    dans-openstack.lan: # Ubuntu srv 22.04
-      ansible_become_pass: '{{ dans_openstack_pass }}'
-      ansible_user: dan-admin 
 
   vars: 
     ansible_user: dan
@@ -35,10 +28,6 @@ all:
         dans-server.lan:
         dans-mini.lan:
         dans-pisrv.lan:
-        dans-nagios.lan:
-        dans-proxmox.lan:
-        dans-openstack.lan:
-        dans-observium.lan:
 
     hypervisor:
       hosts:
