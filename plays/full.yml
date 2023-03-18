@@ -1,3 +1,11 @@
+
+- hosts: servers
+  roles: 
+    - base
+  tags: base
+  vars_files:
+  - ../files/variables.yml
+
 - hosts: servers
   roles:
     - ssh

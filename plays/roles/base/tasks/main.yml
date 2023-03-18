@@ -1,0 +1,32 @@
+---
+# tasks file for base
+
+## Default user
+### In theory the server should be setup with default user 'dan' before I run ansible play against the machine. But because some plays will require specific user folders in /home/dan/ we will ensure the dan user exists and manually intervene if it doesn't
+
+- name: Ensure dan exists and is in sudo group
+  ansible.builtin.user:
+    name: '{{ main_user }}'
+    group: sudo 
+    append: yes
+
+## Install default tools
+
+- name: Install linux tools
+  become: True
+  package:
+    name:
+      - htop
+      - tmux
+      - vim
+      - tree
+      - avahi-daemon
+    state: present
+  when: ansible_facts['os_family']
+
+# Set timezone
+- name: Set timezone to America/Denver
+  become: true
+  community.general.timezone:
+    name: "{{ timezone }}"
+
