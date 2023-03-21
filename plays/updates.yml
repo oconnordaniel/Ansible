@@ -24,26 +24,6 @@
       autoremove: yes
     when: ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian' 
 
-- hosts: all
-  become: true
-  gather_facts: false
-  tasks: 
-  - name: Upgrade dnf
-    ansible.builtin.dnf:
-      name: "*"
-      state: latest    
-    when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS' 
-
-- hosts: all
-  become: true
-  gather_facts: false
-  tasks: 
-  - name: Update pacman 
-    community.general.pacman:
-      update_cache: true
-      upgrade: true
-    when: ansible_distribution == 'Archlinux'  
-
 - hosts: macbook
   become: true
   gather_facts: false

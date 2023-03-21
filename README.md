@@ -19,6 +19,12 @@ General roles:
 
 App roles:
 
+Plays:
+    - ssh keys
+    - users and passwords
+    - nagios agent
+    - croudsec
+
 - website
 - mastodon
 - nagios
