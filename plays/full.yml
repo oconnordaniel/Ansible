@@ -1,10 +1,17 @@
+
+- hosts: servers
+  roles: 
+    - base
+  tags: base
+  vars_files:
+  - ../files/variables.yml
+
 - hosts: servers
   roles:
     - ssh
   tags: ssh
   vars_files:
     - ../files/variables.yml
-<<<<<<< HEAD
       
 #- hosts: servers
 #  roles: 
@@ -28,5 +35,4 @@
   vars_files:
      - ../files/vars.yaml
   tags: nas
-=======
->>>>>>> 00b2f0b8d (Commiting before pull)
+

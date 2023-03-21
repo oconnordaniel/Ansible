@@ -1,11 +1,19 @@
 ---
 
 - hosts: all
+
+  vars_files:
+    - ../files/passwords.yml
+
   tasks: 
   - name: Gather facts up front
     ansible.builtin.gather_facts:
 
 - hosts: all
+
+  vars_files:
+    - ../files/passwords.yml
+
   become: true
   gather_facts: false
   tasks: 

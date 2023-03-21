@@ -1,46 +1,69 @@
 all: 
   hosts: 
-    dans-desktop.lan: # Fedora KDE 37 
-      ansible_become_pass: '{{ dans_desktop_pass }}'
-    dans-server.lan: # Ubuntu srv 22.04
-      ansible_user: dan 
+    dans-server.lan: 
       ansible_become_pass: '{{ dans_server_pass }}'
-    dans-mini.lan: # Ubuntu ser 22.04
-      ansible_user: dan 
-      ansible_become_pass: '{{ dans_mini_pass }}'
-    dans-pisrv.lan: # Debian 11 bullseye
-      ansible_become_pass: '{{ dans_pisrv_pass }}'
-    dans-macbook.lan: # macOS Ventura
+      images_path: "/mnt/Storage/VMs/images"
+
+    dans-desktop.lan: 
+      ansible_become_pass: '{{ dans_desktop_pass }}'
+
+    dans-pisrv.lan:
+      ansible_become_pass: '{{ dans_server_pass }}'
+
+    dans-macbook.lan:
       ansible_become_pass: '{{ dans_mac_pass }}'
-    dans-proxmox.lan: # Debian 11 bullseye
+      ansible_python_interpreter: auto_silent
+      
+    dans-nas.lan: 
+      ansible_become_pass: '{{ dans_server_pass }}'
+
+    dans-proxmox.lan: 
       ansible_become_pass: '{{ dans_prox_pass }}'
       ansible_user: root
-    dans-dell.lan: # Fedora server 37
-      ansible_become_pass: '{{ dans_dell_pass }}'
+
+    dans-mini.lan: 
+      ansible_become_pass: '{{ dans_prox_pass }}'
+      ansible_user: root
+
+    ec2-54-186-211-240.us-west-2.compute.amazonaws.com:
+      ansible_user: ubuntu
+      private_key_file: /Users/dan/.ssh/dans-us-west-2-keypair.pem  
 
   vars: 
     ansible_user: dan
     ansible_connection: ssh
-
   children:
+    full:
+      hosts:
+        dans-desktop.lan:
+        dans-server.lan:
+#        dans-mini.lan:
+        dans-pisrv.lan:
+        dans-macbook.lan:
+        dans-nas.lan:
     servers:
       hosts:
         dans-server.lan:
-        dans-mini.lan:
+#        dans-mini.lan:
         dans-pisrv.lan:
+        dans-nas.lan:
+        ec2-54-186-211-240.us-west-2.compute.amazonaws.com:
 
-    hypervisor:
-      hosts:
+    proxmox:
+      hosts: 
+        dans-proxmox.lan:
         dans-mini.lan:
-
-    pisrv:
-      hosts:
+    pidns:
+      hosts: 
         dans-pisrv.lan:
-
+    fileserver:
+      hosts: 
+        dans-nas.lan:
+          
     desktop:
       hosts:
         dans-desktop.lan:
-
     macbook:
       hosts:
         dans-macbook.lan:
+
