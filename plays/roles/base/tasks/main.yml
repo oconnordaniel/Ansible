@@ -11,7 +11,6 @@
     append: yes
 
 ## Install default tools
-
 - name: Install linux tools
   become: True
   package:
