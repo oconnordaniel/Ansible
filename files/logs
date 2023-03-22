@@ -492,3 +492,961 @@ authentication methods to try.  dan@dans-supermicro.lan: Permission denied (publ
 2023-01-22 16:28:49,454 p=29321 u=dan n=ansible | dans-pisrv.lan             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2023-01-22 16:28:49,454 p=29321 u=dan n=ansible | dans-server.lan            : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2023-01-22 16:28:49,454 p=29321 u=dan n=ansible | dans-supermicro.lan        : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 21:57:38,608 p=64289 u=dan n=ansible | PLAY [all] **********************************************************************************************************************************************************************************
+2023-03-21 21:57:38,834 p=64289 u=dan n=ansible | TASK [Ping all ] ****************************************************************************************************************************************************************************
+2023-03-21 21:57:38,834 p=64289 u=dan n=ansible | Tuesday 21 March 2023  21:57:38 -0600 (0:00:00.266)       0:00:00.266 ********* 
+2023-03-21 21:57:38,834 p=64289 u=dan n=ansible | Tuesday 21 March 2023  21:57:38 -0600 (0:00:00.266)       0:00:00.266 ********* 
+2023-03-21 21:57:39,409 p=64289 u=dan n=ansible | ok: [dans-macbook.lan]
+2023-03-21 21:57:39,486 p=64289 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-21 21:57:39,500 p=64289 u=dan n=ansible | ok: [dans-desktop.lan]
+2023-03-21 21:57:39,574 p=64289 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-21 21:57:39,636 p=64289 u=dan n=ansible | ok: [dans-mini.lan]
+2023-03-21 21:57:39,797 p=64289 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-03-21 21:57:41,449 p=64289 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 21:57:43,291 p=64289 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | dans-desktop.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | dans-macbook.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | dans-mini.lan              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | dans-nas.lan               : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | dans-pisrv.lan             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | dans-proxmox.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | dans-server.lan            : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 5 seconds
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | Tuesday 21 March 2023  21:57:43 -0600 (0:00:04.904)       0:00:05.170 ********* 
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | =============================================================================== 
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | Ping all ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 4.90s
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | Tuesday 21 March 2023  21:57:43 -0600 (0:00:04.904)       0:00:05.170 ********* 
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | =============================================================================== 
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | ansible.builtin.ping ---------------------------------------------------- 4.90s
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-21 21:57:43,738 p=64289 u=dan n=ansible | total ------------------------------------------------------------------- 4.90s
+2023-03-21 21:57:52,691 p=64405 u=dan n=ansible | PLAY [all] **********************************************************************************************************************************************************************************
+2023-03-21 21:57:52,915 p=64405 u=dan n=ansible | TASK [Gather facts up front ] ***************************************************************************************************************************************************************
+2023-03-21 21:57:52,915 p=64405 u=dan n=ansible | Tuesday 21 March 2023  21:57:52 -0600 (0:00:00.262)       0:00:00.262 ********* 
+2023-03-21 21:57:52,915 p=64405 u=dan n=ansible | Tuesday 21 March 2023  21:57:52 -0600 (0:00:00.261)       0:00:00.261 ********* 
+2023-03-21 21:57:53,392 p=64405 u=dan n=ansible | ok: [dans-macbook.lan]
+2023-03-21 21:57:53,693 p=64405 u=dan n=ansible | ok: [dans-desktop.lan]
+2023-03-21 21:57:53,912 p=64405 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-21 21:57:54,013 p=64405 u=dan n=ansible | ok: [dans-mini.lan]
+2023-03-21 21:57:54,216 p=64405 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-21 21:57:54,689 p=64405 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 21:57:55,617 p=64405 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-03-21 21:57:55,967 p=64405 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-21 21:57:56,494 p=64405 u=dan n=ansible | PLAY [all] **********************************************************************************************************************************************************************************
+2023-03-21 21:57:56,746 p=64405 u=dan n=ansible | TASK [Update apt update_cache=True, upgrade=True, autoremove=True] **************************************************************************************************************************
+2023-03-21 21:57:56,746 p=64405 u=dan n=ansible | Tuesday 21 March 2023  21:57:56 -0600 (0:00:03.831)       0:00:04.093 ********* 
+2023-03-21 21:57:56,746 p=64405 u=dan n=ansible | Tuesday 21 March 2023  21:57:56 -0600 (0:00:03.831)       0:00:04.093 ********* 
+2023-03-21 21:57:56,831 p=64405 u=dan n=ansible | skipping: [dans-macbook.lan]
+2023-03-21 21:57:59,498 p=64405 u=dan n=ansible | ok: [dans-mini.lan]
+2023-03-21 21:58:00,327 p=64405 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-21 21:58:00,997 p=64405 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-03-21 21:58:12,048 p=64405 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 21:58:14,630 p=64405 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-21 21:58:16,675 p=64405 u=dan n=ansible | changed: [dans-desktop.lan]
+2023-03-21 22:20:46,679 p=66643 u=dan n=ansible | ERROR! the playbook: plays/main.yml could not be found
+2023-03-21 22:21:06,286 p=66729 u=dan n=ansible | PLAY [servers] *****************************************************************
+2023-03-21 22:21:06,323 p=66729 u=dan n=ansible | PLAY [servers] *****************************************************************
+2023-03-21 22:21:06,357 p=66729 u=dan n=ansible | PLAY [all] *********************************************************************
+2023-03-21 22:21:06,419 p=66729 u=dan n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nas
+
+2023-03-21 22:21:06,420 p=66729 u=dan n=ansible | PLAY [nas] *********************************************************************
+2023-03-21 22:21:06,420 p=66729 u=dan n=ansible | skipping: no hosts matched
+2023-03-21 22:21:06,420 p=66729 u=dan n=ansible | PLAY RECAP *********************************************************************
+2023-03-21 22:21:06,420 p=66729 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-03-21 22:21:06,420 p=66729 u=dan n=ansible | Tuesday 21 March 2023  22:21:06 -0600 (0:00:00.136)       0:00:00.136 ********* 
+2023-03-21 22:21:06,420 p=66729 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:21:06,420 p=66729 u=dan n=ansible | Tuesday 21 March 2023  22:21:06 -0600 (0:00:00.136)       0:00:00.136 ********* 
+2023-03-21 22:21:06,420 p=66729 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:21:06,420 p=66729 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-21 22:21:06,420 p=66729 u=dan n=ansible | total ------------------------------------------------------------------- 0.00s
+2023-03-21 22:21:25,893 p=66782 u=dan n=ansible | ERROR! the playbook: plays/main.yml could not be found
+2023-03-21 22:28:10,291 p=67493 u=dan n=ansible | PLAY [servers] *****************************************************************
+2023-03-21 22:28:10,332 p=67493 u=dan n=ansible | PLAY [servers] *****************************************************************
+2023-03-21 22:28:10,373 p=67493 u=dan n=ansible | PLAY [servers] *****************************************************************
+2023-03-21 22:28:10,385 p=67493 u=dan n=ansible | TASK [observium : Install snmp name=snmp, state=present] ***********************
+2023-03-21 22:28:10,385 p=67493 u=dan n=ansible | Tuesday 21 March 2023  22:28:10 -0600 (0:00:00.096)       0:00:00.096 ********* 
+2023-03-21 22:28:10,385 p=67493 u=dan n=ansible | Tuesday 21 March 2023  22:28:10 -0600 (0:00:00.095)       0:00:00.095 ********* 
+2023-03-21 22:28:10,410 p=67493 u=dan n=ansible | fatal: [dans-server.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:28:10,417 p=67493 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:28:10,420 p=67493 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:28:10,427 p=67493 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | PLAY RECAP *********************************************************************
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | dans-nas.lan               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | dans-pisrv.lan             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | dans-server.lan            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | Tuesday 21 March 2023  22:28:10 -0600 (0:00:00.044)       0:00:00.140 ********* 
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | observium : Install snmp ------------------------------------------------ 0.04s
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | Tuesday 21 March 2023  22:28:10 -0600 (0:00:00.044)       0:00:00.140 ********* 
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | observium --------------------------------------------------------------- 0.04s
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-21 22:28:10,429 p=67493 u=dan n=ansible | total ------------------------------------------------------------------- 0.04s
+2023-03-21 22:29:31,395 p=67718 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:29:31,432 p=67718 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:29:31,463 p=67718 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:29:31,474 p=67718 u=dan n=ansible | TASK [observium : Install snmp name=snmp, state=present] ********************************************************************************************************
+2023-03-21 22:29:31,474 p=67718 u=dan n=ansible | Tuesday 21 March 2023  22:29:31 -0600 (0:00:00.081)       0:00:00.081 ********* 
+2023-03-21 22:29:31,474 p=67718 u=dan n=ansible | Tuesday 21 March 2023  22:29:31 -0600 (0:00:00.081)       0:00:00.081 ********* 
+2023-03-21 22:29:31,490 p=67718 u=dan n=ansible | fatal: [dans-server.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:29:31,497 p=67718 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:29:31,499 p=67718 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:29:31,503 p=67718 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | PLAY RECAP ******************************************************************************************************************************************************
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | dans-nas.lan               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | dans-pisrv.lan             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | dans-server.lan            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | Tuesday 21 March 2023  22:29:31 -0600 (0:00:00.029)       0:00:00.111 ********* 
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | observium : Install snmp --------------------------------------------------------------------------------------------------------------------------------- 0.03s
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | Tuesday 21 March 2023  22:29:31 -0600 (0:00:00.029)       0:00:00.110 ********* 
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | observium --------------------------------------------------------------- 0.03s
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-21 22:29:31,504 p=67718 u=dan n=ansible | total ------------------------------------------------------------------- 0.03s
+2023-03-21 22:31:33,948 p=67924 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:31:33,982 p=67924 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:31:34,015 p=67924 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:31:34,026 p=67924 u=dan n=ansible | TASK [observium : Install snmp name=snmp, state=present] ********************************************************************************************************
+2023-03-21 22:31:34,026 p=67924 u=dan n=ansible | Tuesday 21 March 2023  22:31:34 -0600 (0:00:00.080)       0:00:00.080 ********* 
+2023-03-21 22:31:34,026 p=67924 u=dan n=ansible | Tuesday 21 March 2023  22:31:34 -0600 (0:00:00.080)       0:00:00.080 ********* 
+2023-03-21 22:31:34,050 p=67924 u=dan n=ansible | fatal: [dans-server.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:31:34,055 p=67924 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:31:34,057 p=67924 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:31:34,061 p=67924 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 4, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+  
+    - name: Install snmp
+      ^ here
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | PLAY RECAP ******************************************************************************************************************************************************
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | dans-nas.lan               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | dans-pisrv.lan             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | dans-server.lan            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | Tuesday 21 March 2023  22:31:34 -0600 (0:00:00.035)       0:00:00.116 ********* 
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | observium : Install snmp --------------------------------------------------------------------------------------------------------------------------------- 0.04s
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | Tuesday 21 March 2023  22:31:34 -0600 (0:00:00.035)       0:00:00.115 ********* 
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | observium --------------------------------------------------------------- 0.04s
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-21 22:31:34,062 p=67924 u=dan n=ansible | total ------------------------------------------------------------------- 0.04s
+2023-03-21 22:32:31,085 p=68042 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:32:31,121 p=68042 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:32:31,153 p=68042 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:32:31,156 p=68042 u=dan n=ansible | TASK [Gathering Facts ] *****************************************************************************************************************************************
+2023-03-21 22:32:31,156 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:31 -0600 (0:00:00.072)       0:00:00.072 ********* 
+2023-03-21 22:32:31,156 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:31 -0600 (0:00:00.072)       0:00:00.072 ********* 
+2023-03-21 22:32:31,181 p=68042 u=dan n=ansible | fatal: [dans-server.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-03-21 22:32:31,188 p=68042 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-03-21 22:32:31,189 p=68042 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-03-21 22:32:34,356 p=68042 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 22:32:34,379 p=68042 u=dan n=ansible | TASK [observium : Install snmp name=snmp, state=present] ********************************************************************************************************
+2023-03-21 22:32:34,379 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:34 -0600 (0:00:03.223)       0:00:03.295 ********* 
+2023-03-21 22:32:34,379 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:34 -0600 (0:00:03.223)       0:00:03.295 ********* 
+2023-03-21 22:32:38,241 p=68042 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 22:32:38,259 p=68042 u=dan n=ansible | TASK [observium : Copy snmp config file src=snmpd.conf, dest=/etc/snmp/snmpd.conf, owner=root, group=root, mode=0600] *******************************************
+2023-03-21 22:32:38,259 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:38 -0600 (0:00:03.879)       0:00:07.175 ********* 
+2023-03-21 22:32:38,259 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:38 -0600 (0:00:03.879)       0:00:07.175 ********* 
+2023-03-21 22:32:39,881 p=68042 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 22:32:39,894 p=68042 u=dan n=ansible | TASK [observium : Include ufw _raw_params=ufw.yml] **************************************************************************************************************
+2023-03-21 22:32:39,894 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:39 -0600 (0:00:01.635)       0:00:08.810 ********* 
+2023-03-21 22:32:39,895 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:39 -0600 (0:00:01.635)       0:00:08.810 ********* 
+2023-03-21 22:32:39,924 p=68042 u=dan n=ansible | included: /Users/dan/Development/Ansible/plays/roles/observium/tasks/ufw.yml for ec2-54-186-211-240.us-west-2.compute.amazonaws.com
+2023-03-21 22:32:39,930 p=68042 u=dan n=ansible | TASK [observium : Allow snmp rule=allow, port=snmp, src={{ item }}, proto=udp] **********************************************************************************
+2023-03-21 22:32:39,930 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:39 -0600 (0:00:00.035)       0:00:08.846 ********* 
+2023-03-21 22:32:39,930 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:39 -0600 (0:00:00.035)       0:00:08.846 ********* 
+2023-03-21 22:32:40,685 p=68042 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.10.0/24)
+2023-03-21 22:32:41,304 p=68042 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.1.0/24)
+2023-03-21 22:32:41,894 p=68042 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=100.0.0.0/8)
+2023-03-21 22:32:41,912 p=68042 u=dan n=ansible | TASK [observium : reload ufw state=reloaded] ********************************************************************************************************************
+2023-03-21 22:32:41,912 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:41 -0600 (0:00:01.981)       0:00:10.828 ********* 
+2023-03-21 22:32:41,912 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:41 -0600 (0:00:01.981)       0:00:10.828 ********* 
+2023-03-21 22:32:42,431 p=68042 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 22:32:42,469 p=68042 u=dan n=ansible | RUNNING HANDLER [observium : restart snmp name=snmpd, state=restarted] ******************************************************************************************
+2023-03-21 22:32:42,469 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:42 -0600 (0:00:00.557)       0:00:11.385 ********* 
+2023-03-21 22:32:42,470 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:42 -0600 (0:00:00.557)       0:00:11.385 ********* 
+2023-03-21 22:32:43,143 p=68042 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => changed=false 
+  msg: 'Could not find the requested service snmpd: host'
+2023-03-21 22:32:43,144 p=68042 u=dan n=ansible | PLAY RECAP ******************************************************************************************************************************************************
+2023-03-21 22:32:43,144 p=68042 u=dan n=ansible | dans-nas.lan               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:32:43,145 p=68042 u=dan n=ansible | dans-pisrv.lan             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:32:43,145 p=68042 u=dan n=ansible | dans-server.lan            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:32:43,145 p=68042 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=6    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:32:43,145 p=68042 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 12 seconds
+2023-03-21 22:32:43,145 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:43 -0600 (0:00:00.675)       0:00:12.061 ********* 
+2023-03-21 22:32:43,145 p=68042 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:32:43,145 p=68042 u=dan n=ansible | observium : Install snmp --------------------------------------------------------------------------------------------------------------------------------- 3.88s
+2023-03-21 22:32:43,145 p=68042 u=dan n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------------------------------ 3.22s
+2023-03-21 22:32:43,145 p=68042 u=dan n=ansible | observium : Allow snmp ----------------------------------------------------------------------------------------------------------------------------------- 1.98s
+2023-03-21 22:32:43,146 p=68042 u=dan n=ansible | observium : Copy snmp config file ------------------------------------------------------------------------------------------------------------------------ 1.64s
+2023-03-21 22:32:43,146 p=68042 u=dan n=ansible | observium : restart snmp --------------------------------------------------------------------------------------------------------------------------------- 0.68s
+2023-03-21 22:32:43,146 p=68042 u=dan n=ansible | observium : reload ufw ----------------------------------------------------------------------------------------------------------------------------------- 0.56s
+2023-03-21 22:32:43,146 p=68042 u=dan n=ansible | observium : Include ufw ---------------------------------------------------------------------------------------------------------------------------------- 0.04s
+2023-03-21 22:32:43,146 p=68042 u=dan n=ansible | Tuesday 21 March 2023  22:32:43 -0600 (0:00:00.676)       0:00:12.062 ********* 
+2023-03-21 22:32:43,146 p=68042 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:32:43,146 p=68042 u=dan n=ansible | observium --------------------------------------------------------------- 8.77s
+2023-03-21 22:32:43,146 p=68042 u=dan n=ansible | gather_facts ------------------------------------------------------------ 3.22s
+2023-03-21 22:32:43,146 p=68042 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-21 22:32:43,146 p=68042 u=dan n=ansible | total ------------------------------------------------------------------ 11.99s
+2023-03-21 22:33:07,299 p=68133 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:33:07,335 p=68133 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:33:07,382 p=68133 u=dan n=ansible | PLAY [servers] **************************************************************************************************************************************************
+2023-03-21 22:33:07,390 p=68133 u=dan n=ansible | TASK [Gathering Facts ] *****************************************************************************************************************************************
+2023-03-21 22:33:07,390 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:33:07 -0600 (0:00:00.093)       0:00:00.093 ********* 
+2023-03-21 22:33:07,390 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:33:07 -0600 (0:00:00.092)       0:00:00.092 ********* 
+2023-03-21 22:33:08,794 p=68133 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 22:33:08,798 p=68133 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-21 22:33:09,900 p=68133 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-21 22:33:10,197 p=68133 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-21 22:33:10,291 p=68133 u=dan n=ansible | TASK [observium : Install snmp name=snmp, state=present] ********************************************************************************************************
+2023-03-21 22:33:10,291 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:33:10 -0600 (0:00:02.901)       0:00:02.994 ********* 
+2023-03-21 22:33:10,291 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:33:10 -0600 (0:00:02.901)       0:00:02.993 ********* 
+2023-03-21 22:33:11,409 p=68133 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 22:33:13,345 p=68133 u=dan n=ansible | changed: [dans-server.lan]
+2023-03-21 22:33:22,673 p=68133 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-21 22:38:33,639 p=64405 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => changed=false 
+  msg: 'Failed to update apt cache: unknown reason'
+2023-03-21 22:38:34,075 p=64405 u=dan n=ansible | PLAY [macbook] ******************************************************************************************************************************************************************************
+2023-03-21 22:38:34,083 p=64405 u=dan n=ansible | TASK [Update brew update_homebrew=True, upgrade_all=True] ***********************************************************************************************************************************
+2023-03-21 22:38:34,083 p=64405 u=dan n=ansible | Tuesday 21 March 2023  22:38:34 -0600 (0:40:37.336)       0:40:41.430 ********* 
+2023-03-21 22:38:34,083 p=64405 u=dan n=ansible | Tuesday 21 March 2023  22:38:34 -0600 (0:40:37.336)       0:40:41.430 ********* 
+2023-03-21 22:38:34,098 p=64405 u=dan n=ansible | skipping: [dans-macbook.lan]
+2023-03-21 22:38:34,106 p=64405 u=dan n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************
+2023-03-21 22:38:34,106 p=64405 u=dan n=ansible | dans-desktop.lan           : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:38:34,106 p=64405 u=dan n=ansible | dans-macbook.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-03-21 22:38:34,106 p=64405 u=dan n=ansible | dans-mini.lan              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:38:34,106 p=64405 u=dan n=ansible | dans-nas.lan               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:38:34,106 p=64405 u=dan n=ansible | dans-pisrv.lan             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:38:34,106 p=64405 u=dan n=ansible | dans-proxmox.lan           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:38:34,106 p=64405 u=dan n=ansible | dans-server.lan            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:38:34,106 p=64405 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:38:34,107 p=64405 u=dan n=ansible | Playbook run took 0 days, 0 hours, 40 minutes, 41 seconds
+2023-03-21 22:38:34,107 p=64405 u=dan n=ansible | Tuesday 21 March 2023  22:38:34 -0600 (0:00:00.024)       0:40:41.454 ********* 
+2023-03-21 22:38:34,107 p=64405 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:38:34,108 p=64405 u=dan n=ansible | Update apt ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 2437.34s
+2023-03-21 22:38:34,108 p=64405 u=dan n=ansible | Gather facts up front ---------------------------------------------------------------------------------------------------------------------------------------------------------------- 3.83s
+2023-03-21 22:38:34,108 p=64405 u=dan n=ansible | Update brew -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 0.02s
+2023-03-21 22:38:34,108 p=64405 u=dan n=ansible | Tuesday 21 March 2023  22:38:34 -0600 (0:00:00.024)       0:40:41.455 ********* 
+2023-03-21 22:38:34,108 p=64405 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:38:34,108 p=64405 u=dan n=ansible | apt ------------------------------------------------------------------ 2437.34s
+2023-03-21 22:38:34,108 p=64405 u=dan n=ansible | ansible.builtin.gather_facts -------------------------------------------- 3.83s
+2023-03-21 22:38:34,108 p=64405 u=dan n=ansible | community.general.homebrew ---------------------------------------------- 0.02s
+2023-03-21 22:38:34,108 p=64405 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-21 22:38:34,108 p=64405 u=dan n=ansible | total ---------------------------------------------------------------- 2441.19s
+2023-03-21 22:43:14,983 p=68133 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => changed=false 
+  cache_update_time: 1677221723
+  cache_updated: false
+  msg: |-
+    '/usr/bin/apt-get -y -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold"       install 'snmp=5.9.1+dfsg-1ubuntu2.5'' failed: E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/l/lm-sensors/libsensors-config_3.6.0-7ubuntu1_all.deb  Temporary failure resolving 'ports.ubuntu.com'
+    E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/l/lm-sensors/libsensors5_3.6.0-7ubuntu1_arm64.deb  Temporary failure resolving 'ports.ubuntu.com'
+    E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/n/net-snmp/libsnmp-base_5.9.1%2bdfsg-1ubuntu2.5_all.deb  Temporary failure resolving 'ports.ubuntu.com'
+    E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/n/net-snmp/libsnmp40_5.9.1%2bdfsg-1ubuntu2.5_arm64.deb  Temporary failure resolving 'ports.ubuntu.com'
+    E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/n/net-snmp/snmp_5.9.1%2bdfsg-1ubuntu2.5_arm64.deb  Temporary failure resolving 'ports.ubuntu.com'
+    E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+  rc: 100
+  stderr: |-
+    E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/l/lm-sensors/libsensors-config_3.6.0-7ubuntu1_all.deb  Temporary failure resolving 'ports.ubuntu.com'
+    E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/l/lm-sensors/libsensors5_3.6.0-7ubuntu1_arm64.deb  Temporary failure resolving 'ports.ubuntu.com'
+    E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/n/net-snmp/libsnmp-base_5.9.1%2bdfsg-1ubuntu2.5_all.deb  Temporary failure resolving 'ports.ubuntu.com'
+    E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/n/net-snmp/libsnmp40_5.9.1%2bdfsg-1ubuntu2.5_arm64.deb  Temporary failure resolving 'ports.ubuntu.com'
+    E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/n/net-snmp/snmp_5.9.1%2bdfsg-1ubuntu2.5_arm64.deb  Temporary failure resolving 'ports.ubuntu.com'
+    E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+  stderr_lines: <omitted>
+  stdout: |-
+    Reading package lists...
+    Building dependency tree...
+    Reading state information...
+    The following additional packages will be installed:
+      libsensors-config libsensors5 libsnmp-base libsnmp40
+    Suggested packages:
+      lm-sensors snmp-mibs-downloader
+    The following NEW packages will be installed:
+      libsensors-config libsensors5 libsnmp-base libsnmp40 snmp
+    0 upgraded, 5 newly installed, 0 to remove and 2 not upgraded.
+    Need to get 1509 kB of archives.
+    After this operation, 5289 kB of additional disk space will be used.
+    Ign:1 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsensors-config all 1:3.6.0-7ubuntu1
+    Ign:2 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsensors5 arm64 1:3.6.0-7ubuntu1
+    Ign:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsnmp-base all 5.9.1+dfsg-1ubuntu2.5
+    Ign:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsnmp40 arm64 5.9.1+dfsg-1ubuntu2.5
+    Ign:5 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 snmp arm64 5.9.1+dfsg-1ubuntu2.5
+    Ign:1 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsensors-config all 1:3.6.0-7ubuntu1
+    Ign:2 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsensors5 arm64 1:3.6.0-7ubuntu1
+    Ign:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsnmp-base all 5.9.1+dfsg-1ubuntu2.5
+    Ign:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsnmp40 arm64 5.9.1+dfsg-1ubuntu2.5
+    Ign:5 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 snmp arm64 5.9.1+dfsg-1ubuntu2.5
+    Ign:1 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsensors-config all 1:3.6.0-7ubuntu1
+    Ign:2 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsensors5 arm64 1:3.6.0-7ubuntu1
+    Ign:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsnmp-base all 5.9.1+dfsg-1ubuntu2.5
+    Ign:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsnmp40 arm64 5.9.1+dfsg-1ubuntu2.5
+    Ign:5 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 snmp arm64 5.9.1+dfsg-1ubuntu2.5
+    Err:1 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsensors-config all 1:3.6.0-7ubuntu1
+      Temporary failure resolving 'ports.ubuntu.com'
+    Err:2 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libsensors5 arm64 1:3.6.0-7ubuntu1
+      Temporary failure resolving 'ports.ubuntu.com'
+    Err:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsnmp-base all 5.9.1+dfsg-1ubuntu2.5
+      Temporary failure resolving 'ports.ubuntu.com'
+    Err:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsnmp40 arm64 5.9.1+dfsg-1ubuntu2.5
+      Temporary failure resolving 'ports.ubuntu.com'
+    Err:5 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 snmp arm64 5.9.1+dfsg-1ubuntu2.5
+      Temporary failure resolving 'ports.ubuntu.com'
+  stdout_lines: <omitted>
+2023-03-21 22:43:15,013 p=68133 u=dan n=ansible | TASK [observium : Copy snmp config file src=snmpd.conf, dest=/etc/snmp/snmpd.conf, owner=root, group=root, mode=0600] *******************************************
+2023-03-21 22:43:15,013 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:15 -0600 (0:10:04.722)       0:10:07.716 ********* 
+2023-03-21 22:43:15,013 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:15 -0600 (0:10:04.722)       0:10:07.715 ********* 
+2023-03-21 22:43:16,375 p=68133 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-21 22:43:16,388 p=68133 u=dan n=ansible | changed: [dans-server.lan]
+2023-03-21 22:43:17,443 p=68133 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 22:43:17,474 p=68133 u=dan n=ansible | TASK [observium : Include ufw _raw_params=ufw.yml] **************************************************************************************************************
+2023-03-21 22:43:17,474 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:17 -0600 (0:00:02.460)       0:10:10.176 ********* 
+2023-03-21 22:43:17,474 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:17 -0600 (0:00:02.460)       0:10:10.176 ********* 
+2023-03-21 22:43:17,549 p=68133 u=dan n=ansible | included: /Users/dan/Development/Ansible/plays/roles/observium/tasks/ufw.yml for dans-server.lan, dans-nas.lan, ec2-54-186-211-240.us-west-2.compute.amazonaws.com
+2023-03-21 22:43:17,564 p=68133 u=dan n=ansible | TASK [observium : Allow snmp rule=allow, port=snmp, src={{ item }}, proto=udp] **********************************************************************************
+2023-03-21 22:43:17,564 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:17 -0600 (0:00:00.089)       0:10:10.266 ********* 
+2023-03-21 22:43:17,564 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:17 -0600 (0:00:00.089)       0:10:10.266 ********* 
+2023-03-21 22:43:18,241 p=68133 u=dan n=ansible | changed: [dans-nas.lan] => (item=10.10.10.0/24)
+2023-03-21 22:43:18,269 p=68133 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.10.0/24)
+2023-03-21 22:43:18,346 p=68133 u=dan n=ansible | changed: [dans-server.lan] => (item=10.10.10.0/24)
+2023-03-21 22:43:18,835 p=68133 u=dan n=ansible | changed: [dans-nas.lan] => (item=10.10.1.0/24)
+2023-03-21 22:43:18,886 p=68133 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.1.0/24)
+2023-03-21 22:43:19,442 p=68133 u=dan n=ansible | changed: [dans-nas.lan] => (item=100.0.0.0/8)
+2023-03-21 22:43:19,496 p=68133 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=100.0.0.0/8)
+2023-03-21 22:43:19,963 p=68133 u=dan n=ansible | changed: [dans-server.lan] => (item=10.10.1.0/24)
+2023-03-21 22:43:20,568 p=68133 u=dan n=ansible | changed: [dans-server.lan] => (item=100.0.0.0/8)
+2023-03-21 22:43:20,601 p=68133 u=dan n=ansible | TASK [observium : reload ufw state=reloaded] ********************************************************************************************************************
+2023-03-21 22:43:20,602 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:20 -0600 (0:00:03.037)       0:10:13.304 ********* 
+2023-03-21 22:43:20,602 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:20 -0600 (0:00:03.037)       0:10:13.304 ********* 
+2023-03-21 22:43:21,085 p=68133 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-21 22:43:21,163 p=68133 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-21 22:43:23,747 p=68133 u=dan n=ansible | changed: [dans-server.lan]
+2023-03-21 22:43:23,869 p=68133 u=dan n=ansible | RUNNING HANDLER [observium : restart snmp name=snmpd, state=restarted] ******************************************************************************************
+2023-03-21 22:43:23,869 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:23 -0600 (0:00:03.267)       0:10:16.571 ********* 
+2023-03-21 22:43:23,869 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:23 -0600 (0:00:03.267)       0:10:16.571 ********* 
+2023-03-21 22:43:24,363 p=68133 u=dan n=ansible | fatal: [dans-server.lan]: FAILED! => changed=false 
+  msg: 'Could not find the requested service snmpd: host'
+2023-03-21 22:43:24,540 p=68133 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-21 22:43:24,586 p=68133 u=dan n=ansible | PLAY [all] ******************************************************************************************************************************************************
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nas
+
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | PLAY [nas] ******************************************************************************************************************************************************
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | skipping: no hosts matched
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | PLAY RECAP ******************************************************************************************************************************************************
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | dans-nas.lan               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | dans-pisrv.lan             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | dans-server.lan            : ok=6    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | Playbook run took 0 days, 0 hours, 10 minutes, 17 seconds
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:24 -0600 (0:00:00.795)       0:10:17.367 ********* 
+2023-03-21 22:43:24,664 p=68133 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | observium : Install snmp ------------------------------------------------------------------------------------------------------------------------------- 604.72s
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | observium : reload ufw ----------------------------------------------------------------------------------------------------------------------------------- 3.27s
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | observium : Allow snmp ----------------------------------------------------------------------------------------------------------------------------------- 3.04s
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------------------------------ 2.90s
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | observium : Copy snmp config file ------------------------------------------------------------------------------------------------------------------------ 2.46s
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | observium : restart snmp --------------------------------------------------------------------------------------------------------------------------------- 0.80s
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | observium : Include ufw ---------------------------------------------------------------------------------------------------------------------------------- 0.09s
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | Tuesday 21 March 2023  22:43:24 -0600 (0:00:00.795)       0:10:17.367 ********* 
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | =============================================================================== 
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | observium ------------------------------------------------------------- 614.37s
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | gather_facts ------------------------------------------------------------ 2.90s
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-21 22:43:24,665 p=68133 u=dan n=ansible | total ----------------------------------------------------------------- 617.27s
+2023-03-22 17:21:30,142 p=92845 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:21:30,178 p=92845 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:21:30,226 p=92845 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:21:30,235 p=92845 u=dan n=ansible | TASK [Gathering Facts ] *********************************************************************
+2023-03-22 17:21:30,235 p=92845 u=dan n=ansible | Wednesday 22 March 2023  17:21:30 -0600 (0:00:00.094)       0:00:00.094 ******* 
+2023-03-22 17:21:30,235 p=92845 u=dan n=ansible | Wednesday 22 March 2023  17:21:30 -0600 (0:00:00.094)       0:00:00.094 ******* 
+2023-03-22 17:21:31,649 p=92845 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:21:32,013 p=92845 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:21:33,453 p=92845 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:21:37,757 p=92845 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:21:37,857 p=92845 u=dan n=ansible | TASK [observium : Install snmp name=snmp, state=present] ************************************
+2023-03-22 17:21:37,857 p=92845 u=dan n=ansible | Wednesday 22 March 2023  17:21:37 -0600 (0:00:07.622)       0:00:07.716 ******* 
+2023-03-22 17:21:37,857 p=92845 u=dan n=ansible | Wednesday 22 March 2023  17:21:37 -0600 (0:00:07.622)       0:00:07.716 ******* 
+2023-03-22 17:21:38,650 p=92845 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:21:38,776 p=92845 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:21:38,895 p=92845 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:22:20,738 p=92845 u=dan n=ansible |  [ERROR]: User interrupted execution
+
+2023-03-22 17:24:55,390 p=93123 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:24:55,426 p=93123 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:24:55,473 p=93123 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:24:55,481 p=93123 u=dan n=ansible | TASK [Gathering Facts ] *********************************************************************
+2023-03-22 17:24:55,481 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:24:55 -0600 (0:00:00.093)       0:00:00.093 ******* 
+2023-03-22 17:24:55,481 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:24:55 -0600 (0:00:00.092)       0:00:00.092 ******* 
+2023-03-22 17:24:56,912 p=93123 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:24:56,918 p=93123 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:24:58,247 p=93123 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:24:58,331 p=93123 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:24:58,425 p=93123 u=dan n=ansible | TASK [observium : Install snmp name=snmp, state=present] ************************************
+2023-03-22 17:24:58,425 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:24:58 -0600 (0:00:02.943)       0:00:03.036 ******* 
+2023-03-22 17:24:58,425 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:24:58 -0600 (0:00:02.943)       0:00:03.036 ******* 
+2023-03-22 17:24:59,161 p=93123 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:24:59,352 p=93123 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:24:59,484 p=93123 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:25:28,956 p=93123 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-03-22 17:25:28,988 p=93123 u=dan n=ansible | TASK [observium : Copy snmp config file src=snmpd.conf, dest=/etc/snmp/snmpd.conf, owner=root, group=root, mode=0600] ***
+2023-03-22 17:25:28,988 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:28 -0600 (0:00:30.563)       0:00:33.599 ******* 
+2023-03-22 17:25:28,988 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:28 -0600 (0:00:30.563)       0:00:33.599 ******* 
+2023-03-22 17:25:29,647 p=93123 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:25:29,671 p=93123 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:25:29,969 p=93123 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:25:30,641 p=93123 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-03-22 17:25:30,670 p=93123 u=dan n=ansible | TASK [observium : Include ufw _raw_params=ufw.yml] ******************************************
+2023-03-22 17:25:30,670 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:30 -0600 (0:00:01.681)       0:00:35.281 ******* 
+2023-03-22 17:25:30,670 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:30 -0600 (0:00:01.681)       0:00:35.281 ******* 
+2023-03-22 17:25:30,779 p=93123 u=dan n=ansible | included: /Users/dan/Development/Ansible/plays/roles/observium/tasks/ufw.yml for dans-server.lan, dans-pisrv.lan, dans-nas.lan, ec2-54-186-211-240.us-west-2.compute.amazonaws.com
+2023-03-22 17:25:30,794 p=93123 u=dan n=ansible | TASK [observium : Allow snmp rule=allow, port=snmp, src={{ item }}, proto=udp] **************
+2023-03-22 17:25:30,794 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:30 -0600 (0:00:00.123)       0:00:35.405 ******* 
+2023-03-22 17:25:30,794 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:30 -0600 (0:00:00.123)       0:00:35.405 ******* 
+2023-03-22 17:25:31,512 p=93123 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.10.0/24)
+2023-03-22 17:25:31,519 p=93123 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.10.0/24)
+2023-03-22 17:25:32,086 p=93123 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.1.0/24)
+2023-03-22 17:25:32,345 p=93123 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.1.0/24)
+2023-03-22 17:25:32,351 p=93123 u=dan n=ansible | ok: [dans-server.lan] => (item=10.10.10.0/24)
+2023-03-22 17:25:32,667 p=93123 u=dan n=ansible | ok: [dans-nas.lan] => (item=100.0.0.0/8)
+2023-03-22 17:25:32,679 p=93123 u=dan n=ansible | changed: [dans-pisrv.lan] => (item=10.10.10.0/24)
+2023-03-22 17:25:32,962 p=93123 u=dan n=ansible | ok: [dans-server.lan] => (item=10.10.1.0/24)
+2023-03-22 17:25:33,062 p=93123 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=100.0.0.0/8)
+2023-03-22 17:25:33,653 p=93123 u=dan n=ansible | ok: [dans-server.lan] => (item=100.0.0.0/8)
+2023-03-22 17:25:35,454 p=93123 u=dan n=ansible | changed: [dans-pisrv.lan] => (item=10.10.1.0/24)
+2023-03-22 17:25:37,224 p=93123 u=dan n=ansible | changed: [dans-pisrv.lan] => (item=100.0.0.0/8)
+2023-03-22 17:25:37,257 p=93123 u=dan n=ansible | TASK [observium : reload ufw state=reloaded] ************************************************
+2023-03-22 17:25:37,258 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:37 -0600 (0:00:06.463)       0:00:41.869 ******* 
+2023-03-22 17:25:37,258 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:37 -0600 (0:00:06.463)       0:00:41.869 ******* 
+2023-03-22 17:25:37,752 p=93123 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-22 17:25:37,910 p=93123 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:25:40,718 p=93123 u=dan n=ansible | changed: [dans-server.lan]
+2023-03-22 17:25:42,307 p=93123 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-03-22 17:25:42,467 p=93123 u=dan n=ansible | RUNNING HANDLER [observium : restart snmp name=snmpd, state=restarted] **********************
+2023-03-22 17:25:42,467 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:42 -0600 (0:00:05.209)       0:00:47.078 ******* 
+2023-03-22 17:25:42,467 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:42 -0600 (0:00:05.209)       0:00:47.078 ******* 
+2023-03-22 17:25:43,626 p=93123 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => changed=false 
+  msg: 'Could not find the requested service snmpd: host'
+2023-03-22 17:25:43,634 p=93123 u=dan n=ansible | PLAY [all] **********************************************************************************
+2023-03-22 17:25:43,758 p=93123 u=dan n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nas
+
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | PLAY [nas] **********************************************************************************
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | skipping: no hosts matched
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | PLAY RECAP **********************************************************************************
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | dans-nas.lan               : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | dans-pisrv.lan             : ok=6    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | dans-server.lan            : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 48 seconds
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:43 -0600 (0:00:01.291)       0:00:48.370 ******* 
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | =============================================================================== 
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | observium : Install snmp ------------------------------------------------------------ 30.56s
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | observium : Allow snmp --------------------------------------------------------------- 6.46s
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | observium : reload ufw --------------------------------------------------------------- 5.21s
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | Gathering Facts ---------------------------------------------------------------------- 2.94s
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | observium : Copy snmp config file ---------------------------------------------------- 1.68s
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | observium : restart snmp ------------------------------------------------------------- 1.29s
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | observium : Include ufw -------------------------------------------------------------- 0.12s
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | Wednesday 22 March 2023  17:25:43 -0600 (0:00:01.291)       0:00:48.370 ******* 
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | =============================================================================== 
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | observium -------------------------------------------------------------- 45.33s
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | gather_facts ------------------------------------------------------------ 2.94s
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-22 17:25:43,759 p=93123 u=dan n=ansible | total ------------------------------------------------------------------ 48.28s
+2023-03-22 17:30:54,685 p=93628 u=dan n=ansible | ERROR! couldn't resolve module/action 'community.general.service'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 23, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Enable snmp
+  ^ here
+
+2023-03-22 17:31:32,007 p=93677 u=dan n=ansible | ERROR! couldn't resolve module/action 'community.builtin.service'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/Users/dan/Development/Ansible/plays/roles/observium/tasks/main.yml': line 23, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Enable snmp
+  ^ here
+
+2023-03-22 17:31:55,595 p=93706 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:31:55,631 p=93706 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:31:55,678 p=93706 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:31:55,686 p=93706 u=dan n=ansible | TASK [Gathering Facts ] *********************************************************************
+2023-03-22 17:31:55,686 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:31:55 -0600 (0:00:00.092)       0:00:00.092 ******* 
+2023-03-22 17:31:55,686 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:31:55 -0600 (0:00:00.092)       0:00:00.092 ******* 
+2023-03-22 17:31:57,091 p=93706 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:31:57,095 p=93706 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:31:58,393 p=93706 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:32:00,205 p=93706 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:32:00,307 p=93706 u=dan n=ansible | TASK [observium : Install snmp name=snmpd, state=present] ***********************************
+2023-03-22 17:32:00,307 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:00 -0600 (0:00:04.620)       0:00:04.713 ******* 
+2023-03-22 17:32:00,307 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:00 -0600 (0:00:04.620)       0:00:04.713 ******* 
+2023-03-22 17:32:01,137 p=93706 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:32:01,250 p=93706 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:32:06,056 p=93706 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:32:27,168 p=93706 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-03-22 17:32:27,202 p=93706 u=dan n=ansible | TASK [observium : Copy snmp config file src=snmpd.conf, dest=/etc/snmp/snmpd.conf, owner=root, group=root, mode=0600] ***
+2023-03-22 17:32:27,202 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:27 -0600 (0:00:26.894)       0:00:31.608 ******* 
+2023-03-22 17:32:27,202 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:27 -0600 (0:00:26.894)       0:00:31.608 ******* 
+2023-03-22 17:32:27,870 p=93706 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:32:27,870 p=93706 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:32:28,211 p=93706 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:32:28,752 p=93706 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:32:28,787 p=93706 u=dan n=ansible | TASK [observium : Enable snmp name=snmpd, enabled=True] *************************************
+2023-03-22 17:32:28,787 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:28 -0600 (0:00:01.585)       0:00:33.193 ******* 
+2023-03-22 17:32:28,787 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:28 -0600 (0:00:01.585)       0:00:33.193 ******* 
+2023-03-22 17:32:29,270 p=93706 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:32:29,397 p=93706 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:32:29,478 p=93706 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:32:30,022 p=93706 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:32:30,052 p=93706 u=dan n=ansible | TASK [observium : Include ufw _raw_params=ufw.yml] ******************************************
+2023-03-22 17:32:30,053 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:30 -0600 (0:00:01.265)       0:00:34.459 ******* 
+2023-03-22 17:32:30,053 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:30 -0600 (0:00:01.265)       0:00:34.458 ******* 
+2023-03-22 17:32:30,148 p=93706 u=dan n=ansible | included: /Users/dan/Development/Ansible/plays/roles/observium/tasks/ufw.yml for dans-server.lan, dans-pisrv.lan, dans-nas.lan, ec2-54-186-211-240.us-west-2.compute.amazonaws.com
+2023-03-22 17:32:30,163 p=93706 u=dan n=ansible | TASK [observium : Allow snmp rule=allow, port=snmp, src={{ item }}, proto=udp] **************
+2023-03-22 17:32:30,163 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:30 -0600 (0:00:00.110)       0:00:34.569 ******* 
+2023-03-22 17:32:30,163 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:30 -0600 (0:00:00.110)       0:00:34.569 ******* 
+2023-03-22 17:32:30,785 p=93706 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.10.0/24)
+2023-03-22 17:32:30,836 p=93706 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.10.0/24)
+2023-03-22 17:32:31,369 p=93706 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.1.0/24)
+2023-03-22 17:32:31,413 p=93706 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.1.0/24)
+2023-03-22 17:32:31,864 p=93706 u=dan n=ansible | ok: [dans-server.lan] => (item=10.10.10.0/24)
+2023-03-22 17:32:31,926 p=93706 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.10.0/24)
+2023-03-22 17:32:31,978 p=93706 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=100.0.0.0/8)
+2023-03-22 17:32:32,480 p=93706 u=dan n=ansible | ok: [dans-server.lan] => (item=10.10.1.0/24)
+2023-03-22 17:32:32,741 p=93706 u=dan n=ansible | ok: [dans-nas.lan] => (item=100.0.0.0/8)
+2023-03-22 17:32:32,997 p=93706 u=dan n=ansible | ok: [dans-server.lan] => (item=100.0.0.0/8)
+2023-03-22 17:32:33,631 p=93706 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.1.0/24)
+2023-03-22 17:32:35,339 p=93706 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=100.0.0.0/8)
+2023-03-22 17:32:35,372 p=93706 u=dan n=ansible | TASK [observium : reload ufw state=reloaded, enabled=True] **********************************
+2023-03-22 17:32:35,373 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:35 -0600 (0:00:05.209)       0:00:39.779 ******* 
+2023-03-22 17:32:35,373 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:35 -0600 (0:00:05.209)       0:00:39.779 ******* 
+2023-03-22 17:32:35,573 p=93706 u=dan n=ansible | fatal: [dans-server.lan]: FAILED! => changed=false 
+  msg: 'Unsupported parameters for (community.general.ufw) module: enabled. Supported parameters include: comment, default, delete, direction, from_ip, from_port, insert, insert_relative_to, interface, interface_in, interface_out, log, logging, name, proto, route, rule, state, to_ip, to_port (app, dest, from, if, if_in, if_out, policy, port, protocol, src, to).'
+2023-03-22 17:32:35,640 p=93706 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => changed=false 
+  msg: 'Unsupported parameters for (community.general.ufw) module: enabled. Supported parameters include: comment, default, delete, direction, from_ip, from_port, insert, insert_relative_to, interface, interface_in, interface_out, log, logging, name, proto, route, rule, state, to_ip, to_port (app, dest, from, if, if_in, if_out, policy, port, protocol, src, to).'
+2023-03-22 17:32:35,736 p=93706 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => changed=false 
+  msg: 'Unsupported parameters for (community.general.ufw) module: enabled. Supported parameters include: comment, default, delete, direction, from_ip, from_port, insert, insert_relative_to, interface, interface_in, interface_out, log, logging, name, proto, route, rule, state, to_ip, to_port (app, dest, from, if, if_in, if_out, policy, port, protocol, src, to).'
+2023-03-22 17:32:35,985 p=93706 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => changed=false 
+  msg: 'Unsupported parameters for (community.general.ufw) module: enabled. Supported parameters include: comment, default, delete, direction, from_ip, from_port, insert, insert_relative_to, interface, interface_in, interface_out, log, logging, name, proto, route, rule, state, to_ip, to_port (app, dest, from, if, if_in, if_out, policy, port, protocol, src, to).'
+2023-03-22 17:32:35,989 p=93706 u=dan n=ansible | PLAY RECAP **********************************************************************************
+2023-03-22 17:32:35,989 p=93706 u=dan n=ansible | dans-nas.lan               : ok=6    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:32:35,989 p=93706 u=dan n=ansible | dans-pisrv.lan             : ok=6    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:32:35,989 p=93706 u=dan n=ansible | dans-server.lan            : ok=6    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:32:35,989 p=93706 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=6    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 40 seconds
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:35 -0600 (0:00:00.616)       0:00:40.396 ******* 
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | =============================================================================== 
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | observium : Install snmp ------------------------------------------------------------ 26.89s
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | observium : Allow snmp --------------------------------------------------------------- 5.21s
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | Gathering Facts ---------------------------------------------------------------------- 4.62s
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | observium : Copy snmp config file ---------------------------------------------------- 1.59s
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | observium : Enable snmp -------------------------------------------------------------- 1.27s
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | observium : reload ufw --------------------------------------------------------------- 0.62s
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | observium : Include ufw -------------------------------------------------------------- 0.11s
+2023-03-22 17:32:35,990 p=93706 u=dan n=ansible | Wednesday 22 March 2023  17:32:35 -0600 (0:00:00.617)       0:00:40.396 ******* 
+2023-03-22 17:32:35,991 p=93706 u=dan n=ansible | =============================================================================== 
+2023-03-22 17:32:35,991 p=93706 u=dan n=ansible | observium -------------------------------------------------------------- 35.68s
+2023-03-22 17:32:35,991 p=93706 u=dan n=ansible | gather_facts ------------------------------------------------------------ 4.62s
+2023-03-22 17:32:35,991 p=93706 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-22 17:32:35,991 p=93706 u=dan n=ansible | total ------------------------------------------------------------------ 40.30s
+2023-03-22 17:32:55,326 p=93866 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:32:55,365 p=93866 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:32:55,413 p=93866 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:32:55,422 p=93866 u=dan n=ansible | TASK [Gathering Facts ] *********************************************************************
+2023-03-22 17:32:55,422 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:32:55 -0600 (0:00:00.097)       0:00:00.097 ******* 
+2023-03-22 17:32:55,422 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:32:55 -0600 (0:00:00.097)       0:00:00.097 ******* 
+2023-03-22 17:32:56,358 p=93866 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:32:56,544 p=93866 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:32:56,809 p=93866 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:32:58,060 p=93866 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:32:58,161 p=93866 u=dan n=ansible | TASK [observium : Install snmp name=snmpd, state=present] ***********************************
+2023-03-22 17:32:58,161 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:32:58 -0600 (0:00:02.738)       0:00:02.836 ******* 
+2023-03-22 17:32:58,161 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:32:58 -0600 (0:00:02.738)       0:00:02.836 ******* 
+2023-03-22 17:32:58,999 p=93866 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:32:59,078 p=93866 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:32:59,221 p=93866 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:33:00,587 p=93866 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:33:00,621 p=93866 u=dan n=ansible | TASK [observium : Copy snmp config file src=snmpd.conf, dest=/etc/snmp/snmpd.conf, owner=root, group=root, mode=0600] ***
+2023-03-22 17:33:00,621 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:00 -0600 (0:00:02.460)       0:00:05.296 ******* 
+2023-03-22 17:33:00,621 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:00 -0600 (0:00:02.460)       0:00:05.296 ******* 
+2023-03-22 17:33:01,331 p=93866 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:33:01,346 p=93866 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:33:01,575 p=93866 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:33:02,046 p=93866 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:33:02,087 p=93866 u=dan n=ansible | TASK [observium : Enable snmp name=snmpd, enabled=True] *************************************
+2023-03-22 17:33:02,087 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:02 -0600 (0:00:01.465)       0:00:06.762 ******* 
+2023-03-22 17:33:02,087 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:02 -0600 (0:00:01.465)       0:00:06.762 ******* 
+2023-03-22 17:33:02,564 p=93866 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:33:02,638 p=93866 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:33:02,767 p=93866 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:33:03,306 p=93866 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:33:03,337 p=93866 u=dan n=ansible | TASK [observium : Include ufw _raw_params=ufw.yml] ******************************************
+2023-03-22 17:33:03,337 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:03 -0600 (0:00:01.250)       0:00:08.012 ******* 
+2023-03-22 17:33:03,337 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:03 -0600 (0:00:01.250)       0:00:08.012 ******* 
+2023-03-22 17:33:03,431 p=93866 u=dan n=ansible | included: /Users/dan/Development/Ansible/plays/roles/observium/tasks/ufw.yml for dans-server.lan, dans-pisrv.lan, dans-nas.lan, ec2-54-186-211-240.us-west-2.compute.amazonaws.com
+2023-03-22 17:33:03,446 p=93866 u=dan n=ansible | TASK [observium : Allow snmp rule=allow, port=snmp, src={{ item }}, proto=udp] **************
+2023-03-22 17:33:03,446 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:03 -0600 (0:00:00.109)       0:00:08.122 ******* 
+2023-03-22 17:33:03,446 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:03 -0600 (0:00:00.109)       0:00:08.121 ******* 
+2023-03-22 17:33:04,130 p=93866 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.10.0/24)
+2023-03-22 17:33:04,162 p=93866 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.10.0/24)
+2023-03-22 17:33:04,165 p=93866 u=dan n=ansible | ok: [dans-server.lan] => (item=10.10.10.0/24)
+2023-03-22 17:33:04,734 p=93866 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.1.0/24)
+2023-03-22 17:33:04,740 p=93866 u=dan n=ansible | ok: [dans-server.lan] => (item=10.10.1.0/24)
+2023-03-22 17:33:04,765 p=93866 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.1.0/24)
+2023-03-22 17:33:05,344 p=93866 u=dan n=ansible | ok: [dans-server.lan] => (item=100.0.0.0/8)
+2023-03-22 17:33:05,352 p=93866 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=100.0.0.0/8)
+2023-03-22 17:33:05,355 p=93866 u=dan n=ansible | ok: [dans-nas.lan] => (item=100.0.0.0/8)
+2023-03-22 17:33:06,230 p=93866 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.10.0/24)
+2023-03-22 17:33:07,936 p=93866 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.1.0/24)
+2023-03-22 17:33:09,643 p=93866 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=100.0.0.0/8)
+2023-03-22 17:33:09,676 p=93866 u=dan n=ansible | TASK [observium : reload ufw state=reloaded] ************************************************
+2023-03-22 17:33:09,676 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:09 -0600 (0:00:06.229)       0:00:14.352 ******* 
+2023-03-22 17:33:09,676 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:09 -0600 (0:00:06.229)       0:00:14.351 ******* 
+2023-03-22 17:33:10,139 p=93866 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-22 17:33:10,239 p=93866 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:33:14,254 p=93866 u=dan n=ansible | changed: [dans-server.lan]
+2023-03-22 17:33:14,664 p=93866 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-03-22 17:33:14,862 p=93866 u=dan n=ansible | PLAY [all] **********************************************************************************
+2023-03-22 17:33:14,965 p=93866 u=dan n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nas
+
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | PLAY [nas] **********************************************************************************
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | skipping: no hosts matched
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | PLAY RECAP **********************************************************************************
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | dans-nas.lan               : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | dans-pisrv.lan             : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | dans-server.lan            : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 19 seconds
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:14 -0600 (0:00:05.289)       0:00:19.641 ******* 
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | =============================================================================== 
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | observium : Allow snmp --------------------------------------------------------------- 6.23s
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | observium : reload ufw --------------------------------------------------------------- 5.29s
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | Gathering Facts ---------------------------------------------------------------------- 2.74s
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | observium : Install snmp ------------------------------------------------------------- 2.46s
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | observium : Copy snmp config file ---------------------------------------------------- 1.47s
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | observium : Enable snmp -------------------------------------------------------------- 1.25s
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | observium : Include ufw -------------------------------------------------------------- 0.11s
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | Wednesday 22 March 2023  17:33:14 -0600 (0:00:05.289)       0:00:19.641 ******* 
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | =============================================================================== 
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | observium -------------------------------------------------------------- 16.81s
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | gather_facts ------------------------------------------------------------ 2.74s
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-22 17:33:14,966 p=93866 u=dan n=ansible | total ------------------------------------------------------------------ 19.54s
+2023-03-22 17:34:59,484 p=94089 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:34:59,519 p=94089 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:34:59,567 p=94089 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:34:59,575 p=94089 u=dan n=ansible | TASK [Gathering Facts ] *********************************************************************
+2023-03-22 17:34:59,575 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:34:59 -0600 (0:00:00.093)       0:00:00.093 ******* 
+2023-03-22 17:34:59,575 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:34:59 -0600 (0:00:00.093)       0:00:00.093 ******* 
+2023-03-22 17:35:01,066 p=94089 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:35:01,177 p=94089 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:35:02,562 p=94089 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:35:03,916 p=94089 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:35:04,014 p=94089 u=dan n=ansible | TASK [observium : Install snmp name=snmpd, state=present] ***********************************
+2023-03-22 17:35:04,014 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:04 -0600 (0:00:04.438)       0:00:04.532 ******* 
+2023-03-22 17:35:04,014 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:04 -0600 (0:00:04.438)       0:00:04.532 ******* 
+2023-03-22 17:35:04,890 p=94089 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:35:04,923 p=94089 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:35:05,279 p=94089 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:35:06,433 p=94089 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:35:06,465 p=94089 u=dan n=ansible | TASK [observium : Copy snmp config file src=snmpd.conf, dest=/etc/snmp/snmpd.conf, owner=root, group=root, mode=0600] ***
+2023-03-22 17:35:06,465 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:06 -0600 (0:00:02.450)       0:00:06.983 ******* 
+2023-03-22 17:35:06,465 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:06 -0600 (0:00:02.450)       0:00:06.982 ******* 
+2023-03-22 17:35:07,139 p=94089 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:35:07,203 p=94089 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:35:07,566 p=94089 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:35:07,860 p=94089 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:35:07,893 p=94089 u=dan n=ansible | TASK [observium : Enable snmp name=snmpd, enabled=True] *************************************
+2023-03-22 17:35:07,894 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:07 -0600 (0:00:01.428)       0:00:08.412 ******* 
+2023-03-22 17:35:07,894 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:07 -0600 (0:00:01.428)       0:00:08.411 ******* 
+2023-03-22 17:35:08,423 p=94089 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:35:08,480 p=94089 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:35:08,693 p=94089 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:35:09,119 p=94089 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:35:09,145 p=94089 u=dan n=ansible | TASK [observium : Include ufw _raw_params=ufw.yml] ******************************************
+2023-03-22 17:35:09,145 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:09 -0600 (0:00:01.251)       0:00:09.663 ******* 
+2023-03-22 17:35:09,145 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:09 -0600 (0:00:01.251)       0:00:09.663 ******* 
+2023-03-22 17:35:09,239 p=94089 u=dan n=ansible | included: /Users/dan/Development/Ansible/plays/roles/observium/tasks/ufw.yml for dans-server.lan, dans-pisrv.lan, dans-nas.lan, ec2-54-186-211-240.us-west-2.compute.amazonaws.com
+2023-03-22 17:35:09,254 p=94089 u=dan n=ansible | TASK [observium : Allow snmp rule=allow, port=snmp, src={{ item }}, proto=udp] **************
+2023-03-22 17:35:09,254 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:09 -0600 (0:00:00.109)       0:00:09.772 ******* 
+2023-03-22 17:35:09,254 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:09 -0600 (0:00:00.109)       0:00:09.772 ******* 
+2023-03-22 17:35:09,915 p=94089 u=dan n=ansible | ok: [dans-server.lan] => (item=10.10.10.0/24)
+2023-03-22 17:35:09,920 p=94089 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.10.0/24)
+2023-03-22 17:35:09,936 p=94089 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.10.0/24)
+2023-03-22 17:35:10,527 p=94089 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.1.0/24)
+2023-03-22 17:35:10,557 p=94089 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.1.0/24)
+2023-03-22 17:35:11,032 p=94089 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.10.0/24)
+2023-03-22 17:35:11,085 p=94089 u=dan n=ansible | ok: [dans-nas.lan] => (item=100.0.0.0/8)
+2023-03-22 17:35:11,176 p=94089 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=100.0.0.0/8)
+2023-03-22 17:35:11,467 p=94089 u=dan n=ansible | ok: [dans-server.lan] => (item=10.10.1.0/24)
+2023-03-22 17:35:12,778 p=94089 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.1.0/24)
+2023-03-22 17:35:13,007 p=94089 u=dan n=ansible | ok: [dans-server.lan] => (item=100.0.0.0/8)
+2023-03-22 17:35:14,478 p=94089 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=100.0.0.0/8)
+2023-03-22 17:35:14,510 p=94089 u=dan n=ansible | TASK [observium : reload ufw state=reloaded] ************************************************
+2023-03-22 17:35:14,510 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:14 -0600 (0:00:05.255)       0:00:15.028 ******* 
+2023-03-22 17:35:14,510 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:14 -0600 (0:00:05.255)       0:00:15.027 ******* 
+2023-03-22 17:35:14,995 p=94089 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-22 17:35:15,119 p=94089 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:35:17,689 p=94089 u=dan n=ansible | changed: [dans-server.lan]
+2023-03-22 17:35:19,577 p=94089 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-03-22 17:35:19,776 p=94089 u=dan n=ansible | PLAY [all] **********************************************************************************
+2023-03-22 17:35:19,879 p=94089 u=dan n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nas
+
+2023-03-22 17:35:19,879 p=94089 u=dan n=ansible | PLAY [nas] **********************************************************************************
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | skipping: no hosts matched
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | PLAY RECAP **********************************************************************************
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | dans-nas.lan               : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | dans-pisrv.lan             : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | dans-server.lan            : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 20 seconds
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:19 -0600 (0:00:05.369)       0:00:20.398 ******* 
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | =============================================================================== 
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | observium : reload ufw --------------------------------------------------------------- 5.37s
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | observium : Allow snmp --------------------------------------------------------------- 5.26s
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | Gathering Facts ---------------------------------------------------------------------- 4.44s
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | observium : Install snmp ------------------------------------------------------------- 2.45s
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | observium : Copy snmp config file ---------------------------------------------------- 1.43s
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | observium : Enable snmp -------------------------------------------------------------- 1.25s
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | observium : Include ufw -------------------------------------------------------------- 0.11s
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | Wednesday 22 March 2023  17:35:19 -0600 (0:00:05.370)       0:00:20.397 ******* 
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | =============================================================================== 
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | observium -------------------------------------------------------------- 15.87s
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | gather_facts ------------------------------------------------------------ 4.44s
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-22 17:35:19,880 p=94089 u=dan n=ansible | total ------------------------------------------------------------------ 20.30s
+2023-03-22 17:36:27,631 p=94282 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:36:27,668 p=94282 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:36:27,716 p=94282 u=dan n=ansible | PLAY [servers] ******************************************************************************
+2023-03-22 17:36:27,725 p=94282 u=dan n=ansible | TASK [Gathering Facts ] *********************************************************************
+2023-03-22 17:36:27,725 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:27 -0600 (0:00:00.095)       0:00:00.095 ******* 
+2023-03-22 17:36:27,725 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:27 -0600 (0:00:00.095)       0:00:00.095 ******* 
+2023-03-22 17:36:29,132 p=94282 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:36:29,388 p=94282 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:36:30,517 p=94282 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:36:32,053 p=94282 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:36:32,152 p=94282 u=dan n=ansible | TASK [observium : Install snmp name=snmpd, state=present] ***********************************
+2023-03-22 17:36:32,152 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:32 -0600 (0:00:04.426)       0:00:04.522 ******* 
+2023-03-22 17:36:32,152 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:32 -0600 (0:00:04.426)       0:00:04.522 ******* 
+2023-03-22 17:36:32,875 p=94282 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:36:33,086 p=94282 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:36:33,465 p=94282 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:36:34,567 p=94282 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:36:34,602 p=94282 u=dan n=ansible | TASK [observium : Copy snmp config file src=snmpd.conf, dest=/etc/snmp/snmpd.conf, owner=root, group=root, mode=0600] ***
+2023-03-22 17:36:34,602 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:34 -0600 (0:00:02.450)       0:00:06.972 ******* 
+2023-03-22 17:36:34,602 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:34 -0600 (0:00:02.450)       0:00:06.972 ******* 
+2023-03-22 17:36:35,316 p=94282 u=dan n=ansible | changed: [dans-server.lan]
+2023-03-22 17:36:35,348 p=94282 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-22 17:36:36,118 p=94282 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-03-22 17:36:36,212 p=94282 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:36:36,245 p=94282 u=dan n=ansible | TASK [observium : Enable snmp name=snmpd, enabled=True] *************************************
+2023-03-22 17:36:36,245 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:36 -0600 (0:00:01.642)       0:00:08.615 ******* 
+2023-03-22 17:36:36,245 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:36 -0600 (0:00:01.642)       0:00:08.615 ******* 
+2023-03-22 17:36:36,774 p=94282 u=dan n=ansible | ok: [dans-server.lan]
+2023-03-22 17:36:36,793 p=94282 u=dan n=ansible | ok: [dans-nas.lan]
+2023-03-22 17:36:37,060 p=94282 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:36:37,461 p=94282 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-03-22 17:36:37,494 p=94282 u=dan n=ansible | TASK [observium : Include ufw _raw_params=ufw.yml] ******************************************
+2023-03-22 17:36:37,494 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:37 -0600 (0:00:01.249)       0:00:09.864 ******* 
+2023-03-22 17:36:37,494 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:37 -0600 (0:00:01.249)       0:00:09.864 ******* 
+2023-03-22 17:36:37,606 p=94282 u=dan n=ansible | included: /Users/dan/Development/Ansible/plays/roles/observium/tasks/ufw.yml for dans-server.lan, dans-pisrv.lan, dans-nas.lan, ec2-54-186-211-240.us-west-2.compute.amazonaws.com
+2023-03-22 17:36:37,621 p=94282 u=dan n=ansible | TASK [observium : Allow snmp rule=allow, port=snmp, src={{ item }}, proto=udp] **************
+2023-03-22 17:36:37,621 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:37 -0600 (0:00:00.126)       0:00:09.991 ******* 
+2023-03-22 17:36:37,621 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:37 -0600 (0:00:00.126)       0:00:09.991 ******* 
+2023-03-22 17:36:38,288 p=94282 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.10.0/24)
+2023-03-22 17:36:38,300 p=94282 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.10.0/24)
+2023-03-22 17:36:38,901 p=94282 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.1.0/24)
+2023-03-22 17:36:38,927 p=94282 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=10.10.1.0/24)
+2023-03-22 17:36:39,170 p=94282 u=dan n=ansible | ok: [dans-server.lan] => (item=10.10.10.0/24)
+2023-03-22 17:36:39,374 p=94282 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.10.0/24)
+2023-03-22 17:36:39,477 p=94282 u=dan n=ansible | ok: [dans-nas.lan] => (item=100.0.0.0/8)
+2023-03-22 17:36:39,556 p=94282 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com] => (item=100.0.0.0/8)
+2023-03-22 17:36:39,764 p=94282 u=dan n=ansible | ok: [dans-server.lan] => (item=10.10.1.0/24)
+2023-03-22 17:36:40,309 p=94282 u=dan n=ansible | ok: [dans-server.lan] => (item=100.0.0.0/8)
+2023-03-22 17:36:41,079 p=94282 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.1.0/24)
+2023-03-22 17:36:42,788 p=94282 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=100.0.0.0/8)
+2023-03-22 17:36:42,822 p=94282 u=dan n=ansible | TASK [observium : reload ufw state=reloaded] ************************************************
+2023-03-22 17:36:42,822 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:42 -0600 (0:00:05.201)       0:00:15.193 ******* 
+2023-03-22 17:36:42,822 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:42 -0600 (0:00:05.201)       0:00:15.192 ******* 
+2023-03-22 17:36:43,296 p=94282 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-22 17:36:43,415 p=94282 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:36:46,470 p=94282 u=dan n=ansible | changed: [dans-server.lan]
+2023-03-22 17:36:47,872 p=94282 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-03-22 17:36:48,015 p=94282 u=dan n=ansible | RUNNING HANDLER [observium : restart snmp name=snmpd, state=restarted] **********************
+2023-03-22 17:36:48,015 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:48 -0600 (0:00:05.192)       0:00:20.386 ******* 
+2023-03-22 17:36:48,015 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:48 -0600 (0:00:05.192)       0:00:20.385 ******* 
+2023-03-22 17:36:48,533 p=94282 u=dan n=ansible | changed: [dans-server.lan]
+2023-03-22 17:36:48,673 p=94282 u=dan n=ansible | changed: [dans-nas.lan]
+2023-03-22 17:36:48,686 p=94282 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-03-22 17:36:49,384 p=94282 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-03-22 17:36:49,485 p=94282 u=dan n=ansible | PLAY [all] **********************************************************************************
+2023-03-22 17:36:49,589 p=94282 u=dan n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nas
+
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | PLAY [nas] **********************************************************************************
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | skipping: no hosts matched
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | PLAY RECAP **********************************************************************************
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | dans-nas.lan               : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | dans-pisrv.lan             : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | dans-server.lan            : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 21 seconds
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:49 -0600 (0:00:01.574)       0:00:21.960 ******* 
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | =============================================================================== 
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | observium : Allow snmp --------------------------------------------------------------- 5.20s
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | observium : reload ufw --------------------------------------------------------------- 5.19s
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | Gathering Facts ---------------------------------------------------------------------- 4.43s
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | observium : Install snmp ------------------------------------------------------------- 2.45s
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | observium : Copy snmp config file ---------------------------------------------------- 1.64s
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | observium : restart snmp ------------------------------------------------------------- 1.57s
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | observium : Enable snmp -------------------------------------------------------------- 1.25s
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | observium : Include ufw -------------------------------------------------------------- 0.13s
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | Wednesday 22 March 2023  17:36:49 -0600 (0:00:01.574)       0:00:21.960 ******* 
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | =============================================================================== 
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | observium -------------------------------------------------------------- 17.44s
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | gather_facts ------------------------------------------------------------ 4.43s
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | total ------------------------------------------------------------------ 21.86s

@@ -13,6 +13,15 @@
   vars_files:
     - ../files/variables.yml
       
+- hosts: servers
+  gather_facts: true
+  roles:
+    - observium
+  tags: observium
+  vars_files:
+    - ../files/variables.yml
+    - ../files/passwords.yml
+
 #- hosts: servers
 #  roles: 
 #    - role: ncpa_install_linux

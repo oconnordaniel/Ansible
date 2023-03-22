@@ -21,7 +21,7 @@
       - tree
       - avahi-daemon
     state: present
-  when: ansible_facts['os_family']
+  when: ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian' 
 
 # Set timezone
 - name: Set timezone to America/Denver

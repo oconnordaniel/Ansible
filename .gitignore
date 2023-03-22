@@ -4,3 +4,4 @@ files/passwords.yml
 plays/roles/ssh/files/authorized_keys
 files/logs
 ansible/
+files/logs
