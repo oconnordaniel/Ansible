@@ -2,5 +2,5 @@ files/id_ed25519_ansible
 files/id_ed25519_ansible.pub
 files/passwords.yml
 plays/roles/ssh/files/authorized_keys
-files/logs.old
+files/logs
 ansible/
