@@ -5,6 +5,7 @@
 ### In theory the server should be setup with default user 'dan' before I run ansible play against the machine. But because some plays will require specific user folders in /home/dan/ we will ensure the dan user exists and manually intervene if it doesn't
 
 - name: Ensure dan exists and is in sudo group
+  become: True
   ansible.builtin.user:
     name: '{{ main_user }}'
     group: sudo 
@@ -13,15 +14,24 @@
 ## Install default tools
 - name: Install linux tools
   become: True
-  package:
+  apt:
     name:
       - htop
       - tmux
       - vim
       - tree
       - avahi-daemon
+      - unattended-upgrades 
+#      - apt-config-auto-update
     state: present
-  when: ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian' 
+#  when: ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian' 
+
+- name: Enable unattend upgrades
+  become: True
+  ansible.builtin.service: 
+    name: unattended-upgrades
+    enabled: true
+    state: started
 
 # Set timezone
 - name: Set timezone to America/Denver

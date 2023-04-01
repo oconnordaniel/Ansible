@@ -3,6 +3,7 @@
 
 # Ensure user/.ssh folder exits
 - name: Make dan/.ssh folder if needed
+  become: True
   file: 
     path: /home/{{ main_user }}/.ssh
     owner: dan
@@ -12,6 +13,7 @@
 
 # Copy auth_keys 
 - name: Copy the authorized_keys file
+  become: True
   copy: 
     src: authorized_keys 
     dest: /home/{{ main_user }}/.ssh/authorized_keys

@@ -1450,3 +1450,897 @@ The offending line appears to be:
 2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | gather_facts ------------------------------------------------------------ 4.43s
 2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 2023-03-22 17:36:49,590 p=94282 u=dan n=ansible | total ------------------------------------------------------------------ 21.86s
+2023-04-01 10:08:33,551 p=31170 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 10:08:33,558 p=31170 u=dan n=ansible | ERROR! vars file ../files/passwords.yml was not found
+Could not find file on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-04-01 10:12:18,259 p=32017 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 10:12:18,434 p=32017 u=dan n=ansible | TASK [Ping all ] ******************************************************************************************************
+2023-04-01 10:12:18,434 p=32017 u=dan n=ansible | Saturday 01 April 2023  10:12:18 -0600 (0:00:00.203)       0:00:00.203 ******** 
+2023-04-01 10:12:18,434 p=32017 u=dan n=ansible | Saturday 01 April 2023  10:12:18 -0600 (0:00:00.203)       0:00:00.203 ******** 
+2023-04-01 10:12:19,106 p=32017 u=dan n=ansible | ok: [dans-desktop.lan]
+2023-04-01 10:12:19,129 p=32017 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 10:12:19,239 p=32017 u=dan n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host ec2-54-186-211-240.us-
+west-2.compute.amazonaws.com: Failed to connect to the host via ssh: ubuntu@ec2-54-186-211-240.us-
+west-2.compute.amazonaws.com: Permission denied (publickey).
+
+2023-04-01 10:12:19,876 p=32017 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "ec2-54-186-211-240.us-west-2.compute.amazonaws.com". Make sure this host can be reached over ssh: ubuntu@ec2-54-186-211-240.us-west-2.compute.amazonaws.com: Permission denied (publickey).
+  unreachable: true
+2023-04-01 10:12:19,887 p=32017 u=dan n=ansible | ok: [dans-macbook.lan]
+2023-04-01 10:12:20,347 p=32017 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-01 10:12:21,628 p=32017 u=dan n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host dans-server.lan: Failed to connect to the host via
+ssh: ssh: connect to host dans-server.lan port 22: No route to host
+
+2023-04-01 10:12:22,471 p=32017 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 10:12:24,705 p=32017 u=dan n=ansible | fatal: [dans-server.lan]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "dans-server.lan". Make sure this host can be reached over ssh: ssh: connect to host dans-server.lan port 22: No route to host
+  unreachable: true
+2023-04-01 10:12:28,371 p=32017 u=dan n=ansible |  [ERROR]: User interrupted execution
+
+2023-04-01 10:12:38,383 p=32193 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 10:12:38,561 p=32193 u=dan n=ansible | TASK [Ping all ] ******************************************************************************************************
+2023-04-01 10:12:38,561 p=32193 u=dan n=ansible | Saturday 01 April 2023  10:12:38 -0600 (0:00:00.205)       0:00:00.205 ******** 
+2023-04-01 10:12:38,561 p=32193 u=dan n=ansible | Saturday 01 April 2023  10:12:38 -0600 (0:00:00.205)       0:00:00.205 ******** 
+2023-04-01 10:12:38,766 p=32193 u=dan n=ansible | ok: [dans-desktop.lan]
+2023-04-01 10:12:38,830 p=32193 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-01 10:12:38,866 p=32193 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 10:12:38,917 p=32193 u=dan n=ansible | ok: [dans-macbook.lan]
+2023-04-01 10:12:39,203 p=32193 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-01 10:12:39,317 p=32193 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 10:12:39,333 p=32193 u=dan n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host ec2-54-186-211-240.us-
+west-2.compute.amazonaws.com: Failed to connect to the host via ssh: ubuntu@ec2-54-186-211-240.us-
+west-2.compute.amazonaws.com: Permission denied (publickey).
+
+2023-04-01 10:12:39,934 p=32193 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "ec2-54-186-211-240.us-west-2.compute.amazonaws.com". Make sure this host can be reached over ssh: ubuntu@ec2-54-186-211-240.us-west-2.compute.amazonaws.com: Permission denied (publickey).
+  unreachable: true
+2023-04-01 10:12:41,728 p=32193 u=dan n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host dans-server.lan: Failed to connect to the host via
+ssh: ssh: connect to host dans-server.lan port 22: No route to host
+
+2023-04-01 10:12:44,801 p=32193 u=dan n=ansible | fatal: [dans-server.lan]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "dans-server.lan". Make sure this host can be reached over ssh: ssh: connect to host dans-server.lan port 22: No route to host
+  unreachable: true
+2023-04-01 10:12:45,069 p=32193 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 10:12:45,069 p=32193 u=dan n=ansible | dans-desktop.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:12:45,069 p=32193 u=dan n=ansible | dans-macbook.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | dans-mini.lan              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | dans-nas.lan               : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | dans-pisrv.lan             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | dans-proxmox.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | dans-server.lan            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 6 seconds
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | Saturday 01 April 2023  10:12:45 -0600 (0:00:06.509)       0:00:06.715 ******** 
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | =============================================================================== 
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | Ping all ------------------------------------------------------------------------------------------------------- 6.51s
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | Saturday 01 April 2023  10:12:45 -0600 (0:00:06.509)       0:00:06.714 ******** 
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | =============================================================================== 
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | ansible.builtin.ping ---------------------------------------------------- 6.51s
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 10:12:45,070 p=32193 u=dan n=ansible | total ------------------------------------------------------------------- 6.51s
+2023-04-01 10:13:00,386 p=32294 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 10:13:00,559 p=32294 u=dan n=ansible | TASK [Ping all ] ******************************************************************************************************
+2023-04-01 10:13:00,559 p=32294 u=dan n=ansible | Saturday 01 April 2023  10:13:00 -0600 (0:00:00.201)       0:00:00.201 ******** 
+2023-04-01 10:13:00,559 p=32294 u=dan n=ansible | Saturday 01 April 2023  10:13:00 -0600 (0:00:00.201)       0:00:00.201 ******** 
+2023-04-01 10:13:00,764 p=32294 u=dan n=ansible | ok: [dans-desktop.lan]
+2023-04-01 10:13:00,826 p=32294 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-01 10:13:00,854 p=32294 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-01 10:13:00,867 p=32294 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 10:13:00,939 p=32294 u=dan n=ansible | ok: [dans-macbook.lan]
+2023-04-01 10:13:01,312 p=32294 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 10:13:03,211 p=32294 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 10:13:03,745 p=32294 u=dan n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host dans-server.lan: Failed to connect to the host via
+ssh: ssh: connect to host dans-server.lan port 22: No route to host
+
+2023-04-01 10:13:06,817 p=32294 u=dan n=ansible | fatal: [dans-server.lan]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "dans-server.lan". Make sure this host can be reached over ssh: ssh: connect to host dans-server.lan port 22: No route to host
+  unreachable: true
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | dans-desktop.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | dans-macbook.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | dans-mini.lan              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | dans-nas.lan               : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | dans-pisrv.lan             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | dans-proxmox.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | dans-server.lan            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 6 seconds
+2023-04-01 10:13:07,097 p=32294 u=dan n=ansible | Saturday 01 April 2023  10:13:07 -0600 (0:00:06.538)       0:00:06.740 ******** 
+2023-04-01 10:13:07,098 p=32294 u=dan n=ansible | =============================================================================== 
+2023-04-01 10:13:07,098 p=32294 u=dan n=ansible | Ping all ------------------------------------------------------------------------------------------------------- 6.54s
+2023-04-01 10:13:07,098 p=32294 u=dan n=ansible | Saturday 01 April 2023  10:13:07 -0600 (0:00:06.538)       0:00:06.739 ******** 
+2023-04-01 10:13:07,098 p=32294 u=dan n=ansible | =============================================================================== 
+2023-04-01 10:13:07,098 p=32294 u=dan n=ansible | ansible.builtin.ping ---------------------------------------------------- 6.54s
+2023-04-01 10:13:07,098 p=32294 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 10:13:07,098 p=32294 u=dan n=ansible | total ------------------------------------------------------------------- 6.54s
+2023-04-01 10:13:35,424 p=32408 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 10:13:35,601 p=32408 u=dan n=ansible | TASK [Ping all ] ******************************************************************************************************
+2023-04-01 10:13:35,601 p=32408 u=dan n=ansible | Saturday 01 April 2023  10:13:35 -0600 (0:00:00.204)       0:00:00.204 ******** 
+2023-04-01 10:13:35,601 p=32408 u=dan n=ansible | Saturday 01 April 2023  10:13:35 -0600 (0:00:00.204)       0:00:00.204 ******** 
+2023-04-01 10:13:35,806 p=32408 u=dan n=ansible | ok: [dans-desktop.lan]
+2023-04-01 10:13:35,866 p=32408 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-01 10:13:35,871 p=32408 u=dan n=ansible | ok: [dans-macbook.lan]
+2023-04-01 10:13:35,887 p=32408 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-01 10:13:35,908 p=32408 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 10:13:36,239 p=32408 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 10:13:36,358 p=32408 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 10:13:38,849 p=32408 u=dan n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host dans-server.lan: Failed to connect to the host via
+ssh: ssh: connect to host dans-server.lan port 22: No route to host
+
+2023-04-01 10:13:41,921 p=32408 u=dan n=ansible | fatal: [dans-server.lan]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "dans-server.lan". Make sure this host can be reached over ssh: ssh: connect to host dans-server.lan port 22: No route to host
+  unreachable: true
+2023-04-01 10:13:42,232 p=32408 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 10:13:42,232 p=32408 u=dan n=ansible | dans-desktop.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:42,232 p=32408 u=dan n=ansible | dans-macbook.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:42,232 p=32408 u=dan n=ansible | dans-mini.lan              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:42,232 p=32408 u=dan n=ansible | dans-nas.lan               : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:42,232 p=32408 u=dan n=ansible | dans-pisrv.lan             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:42,232 p=32408 u=dan n=ansible | dans-proxmox.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:42,232 p=32408 u=dan n=ansible | dans-server.lan            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:42,233 p=32408 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:42,233 p=32408 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 6 seconds
+2023-04-01 10:13:42,233 p=32408 u=dan n=ansible | Saturday 01 April 2023  10:13:42 -0600 (0:00:06.631)       0:00:06.836 ******** 
+2023-04-01 10:13:42,233 p=32408 u=dan n=ansible | =============================================================================== 
+2023-04-01 10:13:42,233 p=32408 u=dan n=ansible | Ping all ------------------------------------------------------------------------------------------------------- 6.63s
+2023-04-01 10:13:42,233 p=32408 u=dan n=ansible | Saturday 01 April 2023  10:13:42 -0600 (0:00:06.631)       0:00:06.835 ******** 
+2023-04-01 10:13:42,233 p=32408 u=dan n=ansible | =============================================================================== 
+2023-04-01 10:13:42,233 p=32408 u=dan n=ansible | ansible.builtin.ping ---------------------------------------------------- 6.63s
+2023-04-01 10:13:42,233 p=32408 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 10:13:42,233 p=32408 u=dan n=ansible | total ------------------------------------------------------------------- 6.63s
+2023-04-01 10:13:55,995 p=32489 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 10:13:56,149 p=32489 u=dan n=ansible | TASK [Ping all ] ******************************************************************************************************
+2023-04-01 10:13:56,149 p=32489 u=dan n=ansible | Saturday 01 April 2023  10:13:56 -0600 (0:00:00.182)       0:00:00.182 ******** 
+2023-04-01 10:13:56,149 p=32489 u=dan n=ansible | Saturday 01 April 2023  10:13:56 -0600 (0:00:00.181)       0:00:00.181 ******** 
+2023-04-01 10:13:56,356 p=32489 u=dan n=ansible | ok: [dans-desktop.lan]
+2023-04-01 10:13:56,417 p=32489 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-01 10:13:56,431 p=32489 u=dan n=ansible | ok: [dans-macbook.lan]
+2023-04-01 10:13:56,437 p=32489 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-01 10:13:56,464 p=32489 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 10:13:56,801 p=32489 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 10:13:56,907 p=32489 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | dans-desktop.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | dans-macbook.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | dans-mini.lan              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | dans-nas.lan               : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | dans-pisrv.lan             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | dans-proxmox.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 1 seconds
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | Saturday 01 April 2023  10:13:57 -0600 (0:00:01.046)       0:00:01.228 ******** 
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | =============================================================================== 
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | Ping all ------------------------------------------------------------------------------------------------------- 1.05s
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | Saturday 01 April 2023  10:13:57 -0600 (0:00:01.046)       0:00:01.228 ******** 
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | =============================================================================== 
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | ansible.builtin.ping ---------------------------------------------------- 1.05s
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 10:13:57,196 p=32489 u=dan n=ansible | total ------------------------------------------------------------------- 1.05s
+2023-04-01 10:14:03,502 p=32557 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 10:14:03,658 p=32557 u=dan n=ansible | TASK [Gather facts up front ] *****************************************************************************************
+2023-04-01 10:14:03,658 p=32557 u=dan n=ansible | Saturday 01 April 2023  10:14:03 -0600 (0:00:00.183)       0:00:00.183 ******** 
+2023-04-01 10:14:03,658 p=32557 u=dan n=ansible | Saturday 01 April 2023  10:14:03 -0600 (0:00:00.183)       0:00:00.183 ******** 
+2023-04-01 10:14:04,386 p=32557 u=dan n=ansible | ok: [dans-desktop.lan]
+2023-04-01 10:14:04,525 p=32557 u=dan n=ansible | ok: [dans-macbook.lan]
+2023-04-01 10:14:04,742 p=32557 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 10:14:04,785 p=32557 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-01 10:14:05,178 p=32557 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 10:14:06,181 p=32557 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-01 10:14:06,356 p=32557 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 10:14:06,739 p=32557 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 10:14:06,941 p=32557 u=dan n=ansible | TASK [Update apt update_cache=True, upgrade=True, autoremove=True] ****************************************************
+2023-04-01 10:14:06,942 p=32557 u=dan n=ansible | Saturday 01 April 2023  10:14:06 -0600 (0:00:03.283)       0:00:03.467 ******** 
+2023-04-01 10:14:06,942 p=32557 u=dan n=ansible | Saturday 01 April 2023  10:14:06 -0600 (0:00:03.283)       0:00:03.466 ******** 
+2023-04-01 10:14:06,991 p=32557 u=dan n=ansible | skipping: [dans-macbook.lan]
+2023-04-01 10:14:17,894 p=32557 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 10:14:30,175 p=32557 u=dan n=ansible | changed: [dans-desktop.lan]
+2023-04-01 10:15:12,524 p=32557 u=dan n=ansible | changed: [dans-mini.lan]
+2023-04-01 10:18:52,618 p=32557 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-04-01 13:09:36,908 p=32557 u=dan n=ansible |  [ERROR]: User interrupted execution
+
+2023-04-01 13:09:38,224 p=35684 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 13:09:38,377 p=35684 u=dan n=ansible | TASK [Gather facts up front ] *****************************************************************************************
+2023-04-01 13:09:38,377 p=35684 u=dan n=ansible | Saturday 01 April 2023  13:09:38 -0600 (0:00:00.180)       0:00:00.180 ******** 
+2023-04-01 13:09:38,377 p=35684 u=dan n=ansible | Saturday 01 April 2023  13:09:38 -0600 (0:00:00.179)       0:00:00.179 ******** 
+2023-04-01 13:09:39,404 p=35684 u=dan n=ansible | ok: [dans-desktop.lan]
+2023-04-01 13:09:39,691 p=35684 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:09:39,777 p=35684 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-01 13:09:40,224 p=35684 u=dan n=ansible | ok: [dans-macbook.lan]
+2023-04-01 13:09:40,455 p=35684 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-01 13:09:41,450 p=35684 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:09:44,155 p=35684 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:09:44,584 p=35684 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 13:09:44,780 p=35684 u=dan n=ansible | TASK [Update apt update_cache=True, upgrade=True, autoremove=True] ****************************************************
+2023-04-01 13:09:44,780 p=35684 u=dan n=ansible | Saturday 01 April 2023  13:09:44 -0600 (0:00:06.403)       0:00:06.583 ******** 
+2023-04-01 13:09:44,780 p=35684 u=dan n=ansible | Saturday 01 April 2023  13:09:44 -0600 (0:00:06.403)       0:00:06.583 ******** 
+2023-04-01 13:09:44,832 p=35684 u=dan n=ansible | skipping: [dans-macbook.lan]
+2023-04-01 13:09:46,338 p=35684 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-01 13:09:46,577 p=35684 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-01 13:09:50,463 p=35684 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:09:52,096 p=35684 u=dan n=ansible | ok: [dans-desktop.lan]
+2023-04-01 13:09:53,102 p=35684 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:10:03,098 p=35684 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:10:03,450 p=35684 u=dan n=ansible | PLAY [macbook] ********************************************************************************************************
+2023-04-01 13:10:03,460 p=35684 u=dan n=ansible | TASK [Update brew update_homebrew=True, upgrade_all=True] *************************************************************
+2023-04-01 13:10:03,460 p=35684 u=dan n=ansible | Saturday 01 April 2023  13:10:03 -0600 (0:00:18.680)       0:00:25.263 ******** 
+2023-04-01 13:10:03,461 p=35684 u=dan n=ansible | Saturday 01 April 2023  13:10:03 -0600 (0:00:18.680)       0:00:25.263 ******** 
+2023-04-01 13:10:03,473 p=35684 u=dan n=ansible | skipping: [dans-macbook.lan]
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | dans-desktop.lan           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | dans-macbook.lan           : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | dans-mini.lan              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | dans-nas.lan               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | dans-pisrv.lan             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | dans-proxmox.lan           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 25 seconds
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | Saturday 01 April 2023  13:10:03 -0600 (0:00:00.024)       0:00:25.288 ******** 
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | Update apt ---------------------------------------------------------------------------------------------------- 18.68s
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | Gather facts up front ------------------------------------------------------------------------------------------ 6.40s
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | Update brew ---------------------------------------------------------------------------------------------------- 0.02s
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | Saturday 01 April 2023  13:10:03 -0600 (0:00:00.024)       0:00:25.288 ******** 
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:10:03,485 p=35684 u=dan n=ansible | apt -------------------------------------------------------------------- 18.68s
+2023-04-01 13:10:03,486 p=35684 u=dan n=ansible | ansible.builtin.gather_facts -------------------------------------------- 6.40s
+2023-04-01 13:10:03,486 p=35684 u=dan n=ansible | community.general.homebrew ---------------------------------------------- 0.02s
+2023-04-01 13:10:03,486 p=35684 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 13:10:03,486 p=35684 u=dan n=ansible | total ------------------------------------------------------------------ 25.11s
+2023-04-01 13:10:18,013 p=36608 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:10:18,029 p=36608 u=dan n=ansible | TASK [base : Ensure dan exists and is in sudo group name={{ main_user }}, group=sudo, append=True] ********************
+2023-04-01 13:10:18,029 p=36608 u=dan n=ansible | Saturday 01 April 2023  13:10:18 -0600 (0:00:00.018)       0:00:00.018 ******** 
+2023-04-01 13:10:18,029 p=36608 u=dan n=ansible | Saturday 01 April 2023  13:10:18 -0600 (0:00:00.018)       0:00:00.018 ******** 
+2023-04-01 13:10:18,047 p=36608 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-04-01 13:10:18,048 p=36608 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-04-01 13:10:18,907 p=36608 u=dan n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to
+an error in Ansible 2.14.
+
+2023-04-01 13:10:18,908 p=36608 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => changed=false 
+  ansible_facts:
+    discovered_interpreter_python: /usr/bin/python3
+  msg: |-
+    useradd: Permission denied.
+    useradd: cannot lock /etc/passwd; try again later.
+  name: dan
+  rc: 1
+2023-04-01 13:10:18,909 p=36608 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 13:10:18,909 p=36608 u=dan n=ansible | dans-nas.lan               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:10:18,909 p=36608 u=dan n=ansible | dans-pisrv.lan             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:10:18,909 p=36608 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:10:18,909 p=36608 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-04-01 13:10:18,909 p=36608 u=dan n=ansible | Saturday 01 April 2023  13:10:18 -0600 (0:00:00.880)       0:00:00.898 ******** 
+2023-04-01 13:10:18,909 p=36608 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:10:18,910 p=36608 u=dan n=ansible | base : Ensure dan exists and is in sudo group ------------------------------------------------------------------ 0.88s
+2023-04-01 13:10:18,910 p=36608 u=dan n=ansible | Saturday 01 April 2023  13:10:18 -0600 (0:00:00.880)       0:00:00.898 ******** 
+2023-04-01 13:10:18,910 p=36608 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:10:18,910 p=36608 u=dan n=ansible | base -------------------------------------------------------------------- 0.88s
+2023-04-01 13:10:18,910 p=36608 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 13:10:18,910 p=36608 u=dan n=ansible | total ------------------------------------------------------------------- 0.88s
+2023-04-01 13:11:06,528 p=36812 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:11:06,544 p=36812 u=dan n=ansible | TASK [base : Ensure dan exists and is in sudo group name={{ main_user }}, group=sudo, append=True] ********************
+2023-04-01 13:11:06,544 p=36812 u=dan n=ansible | Saturday 01 April 2023  13:11:06 -0600 (0:00:00.018)       0:00:00.018 ******** 
+2023-04-01 13:11:06,544 p=36812 u=dan n=ansible | Saturday 01 April 2023  13:11:06 -0600 (0:00:00.017)       0:00:00.017 ******** 
+2023-04-01 13:11:06,561 p=36812 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-04-01 13:11:06,561 p=36812 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-04-01 13:11:07,411 p=36812 u=dan n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to
+an error in Ansible 2.14.
+
+2023-04-01 13:11:07,411 p=36812 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:11:07,415 p=36812 u=dan n=ansible | TASK [base : Install linux tools name=['htop', 'tmux', 'vim', 'tree', 'avahi-daemon', 'unattended-upgrades', 'apt-config-auto-update'], state=present] ***
+2023-04-01 13:11:07,415 p=36812 u=dan n=ansible | Saturday 01 April 2023  13:11:07 -0600 (0:00:00.871)       0:00:00.889 ******** 
+2023-04-01 13:11:07,416 p=36812 u=dan n=ansible | Saturday 01 April 2023  13:11:07 -0600 (0:00:00.871)       0:00:00.889 ******** 
+2023-04-01 13:11:07,426 p=36812 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian'): 'dict object' has no attribute 'os_family'. 'dict object' has no attribute 'os_family'
+  
+    The error appears to be in '/home/dan/Documents/Ansible/plays/roles/base/tasks/main.yml': line 15, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+    ## Install default tools
+    - name: Install linux tools
+      ^ here
+2023-04-01 13:11:07,427 p=36812 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 13:11:07,427 p=36812 u=dan n=ansible | dans-nas.lan               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:11:07,427 p=36812 u=dan n=ansible | dans-pisrv.lan             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:11:07,427 p=36812 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=1    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:11:07,427 p=36812 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-04-01 13:11:07,428 p=36812 u=dan n=ansible | Saturday 01 April 2023  13:11:07 -0600 (0:00:00.012)       0:00:00.901 ******** 
+2023-04-01 13:11:07,428 p=36812 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:11:07,428 p=36812 u=dan n=ansible | base : Ensure dan exists and is in sudo group ------------------------------------------------------------------ 0.87s
+2023-04-01 13:11:07,428 p=36812 u=dan n=ansible | base : Install linux tools ------------------------------------------------------------------------------------- 0.01s
+2023-04-01 13:11:07,428 p=36812 u=dan n=ansible | Saturday 01 April 2023  13:11:07 -0600 (0:00:00.012)       0:00:00.901 ******** 
+2023-04-01 13:11:07,428 p=36812 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:11:07,428 p=36812 u=dan n=ansible | base -------------------------------------------------------------------- 0.88s
+2023-04-01 13:11:07,428 p=36812 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 13:11:07,428 p=36812 u=dan n=ansible | total ------------------------------------------------------------------- 0.88s
+2023-04-01 13:12:39,783 p=37020 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:12:39,800 p=37020 u=dan n=ansible | TASK [base : Ensure dan exists and is in sudo group name={{ main_user }}, group=sudo, append=True] ********************
+2023-04-01 13:12:39,800 p=37020 u=dan n=ansible | Saturday 01 April 2023  13:12:39 -0600 (0:00:00.019)       0:00:00.019 ******** 
+2023-04-01 13:12:39,800 p=37020 u=dan n=ansible | Saturday 01 April 2023  13:12:39 -0600 (0:00:00.018)       0:00:00.018 ******** 
+2023-04-01 13:12:39,817 p=37020 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-04-01 13:12:39,818 p=37020 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-04-01 13:12:40,672 p=37020 u=dan n=ansible |  [ERROR]: User interrupted execution
+
+2023-04-01 13:14:23,887 p=37321 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:14:23,964 p=37321 u=dan n=ansible | TASK [base : Ensure dan exists and is in sudo group name={{ main_user }}, group=sudo, append=True] ********************
+2023-04-01 13:14:23,964 p=37321 u=dan n=ansible | Saturday 01 April 2023  13:14:23 -0600 (0:00:00.104)       0:00:00.104 ******** 
+2023-04-01 13:14:23,964 p=37321 u=dan n=ansible | Saturday 01 April 2023  13:14:23 -0600 (0:00:00.104)       0:00:00.104 ******** 
+2023-04-01 13:14:24,700 p=37321 u=dan n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to
+an error in Ansible 2.14.
+
+2023-04-01 13:14:24,700 p=37321 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-01 13:14:26,009 p=37321 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:14:27,908 p=37321 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-04-01 13:14:27,920 p=37321 u=dan n=ansible | TASK [base : Install linux tools name=['htop', 'tmux', 'vim', 'tree', 'avahi-daemon', 'unattended-upgrades', 'apt-config-auto-update'], state=present] ***
+2023-04-01 13:14:27,920 p=37321 u=dan n=ansible | Saturday 01 April 2023  13:14:27 -0600 (0:00:03.955)       0:00:04.060 ******** 
+2023-04-01 13:14:27,920 p=37321 u=dan n=ansible | Saturday 01 April 2023  13:14:27 -0600 (0:00:03.955)       0:00:04.059 ******** 
+2023-04-01 13:14:27,936 p=37321 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian'): 'dict object' has no attribute 'os_family'. 'dict object' has no attribute 'os_family'
+  
+    The error appears to be in '/home/dan/Documents/Ansible/plays/roles/base/tasks/main.yml': line 15, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+    ## Install default tools
+    - name: Install linux tools
+      ^ here
+2023-04-01 13:14:27,950 p=37321 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian'): 'dict object' has no attribute 'os_family'. 'dict object' has no attribute 'os_family'
+  
+    The error appears to be in '/home/dan/Documents/Ansible/plays/roles/base/tasks/main.yml': line 15, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+    ## Install default tools
+    - name: Install linux tools
+      ^ here
+2023-04-01 13:14:27,957 p=37321 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian'' failed. The error was: error while evaluating conditional (ansible_facts['os_family'] == 'Ubuntu' or ansible_distribution == 'Debian'): 'dict object' has no attribute 'os_family'. 'dict object' has no attribute 'os_family'
+  
+    The error appears to be in '/home/dan/Documents/Ansible/plays/roles/base/tasks/main.yml': line 15, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+    ## Install default tools
+    - name: Install linux tools
+      ^ here
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | dans-nas.lan               : ok=1    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | dans-pisrv.lan             : ok=1    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 4 seconds
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | Saturday 01 April 2023  13:14:27 -0600 (0:00:00.038)       0:00:04.098 ******** 
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | base : Ensure dan exists and is in sudo group ------------------------------------------------------------------ 3.96s
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | base : Install linux tools ------------------------------------------------------------------------------------- 0.04s
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | Saturday 01 April 2023  13:14:27 -0600 (0:00:00.038)       0:00:04.098 ******** 
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | base -------------------------------------------------------------------- 3.99s
+2023-04-01 13:14:27,958 p=37321 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 13:14:27,959 p=37321 u=dan n=ansible | total ------------------------------------------------------------------- 3.99s
+2023-04-01 13:15:22,866 p=37473 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:15:22,944 p=37473 u=dan n=ansible | TASK [base : Ensure dan exists and is in sudo group name={{ main_user }}, group=sudo, append=True] ********************
+2023-04-01 13:15:22,944 p=37473 u=dan n=ansible | Saturday 01 April 2023  13:15:22 -0600 (0:00:00.106)       0:00:00.106 ******** 
+2023-04-01 13:15:22,944 p=37473 u=dan n=ansible | Saturday 01 April 2023  13:15:22 -0600 (0:00:00.105)       0:00:00.105 ******** 
+2023-04-01 13:15:23,334 p=37473 u=dan n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to
+an error in Ansible 2.14.
+
+2023-04-01 13:15:23,334 p=37473 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:15:23,687 p=37473 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:15:23,902 p=37473 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:15:23,919 p=37473 u=dan n=ansible | TASK [base : Install linux tools name=['htop', 'tmux', 'vim', 'tree', 'avahi-daemon', 'unattended-upgrades', 'apt-config-auto-update'], state=present] ***
+2023-04-01 13:15:23,919 p=37473 u=dan n=ansible | Saturday 01 April 2023  13:15:23 -0600 (0:00:00.974)       0:00:01.080 ******** 
+2023-04-01 13:15:23,919 p=37473 u=dan n=ansible | Saturday 01 April 2023  13:15:23 -0600 (0:00:00.974)       0:00:01.080 ******** 
+2023-04-01 13:15:26,512 p=37473 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-01 13:15:27,809 p=37473 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => changed=false 
+  cache_update_time: 1680376186
+  cache_updated: false
+  msg: |-
+    '/usr/bin/apt-get -y -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold"       install 'apt-config-auto-update=2.1+nmu1'' failed: E: Sub-process /usr/bin/dpkg returned an error code (1)
+  rc: 100
+  stderr: |-
+    E: Sub-process /usr/bin/dpkg returned an error code (1)
+  stderr_lines: <omitted>
+  stdout: |-
+    Reading package lists...
+    Building dependency tree...
+    Reading state information...
+    The following NEW packages will be installed:
+      apt-config-auto-update
+    0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+    Need to get 2176 B of archives.
+    After this operation, 15.4 kB of additional disk space will be used.
+    Get:1 http://us-west-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 apt-config-auto-update all 2.1+nmu1 [2176 B]
+    Fetched 2176 B in 0s (24.9 kB/s)
+    Selecting previously unselected package apt-config-auto-update.
+    (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 144905 files and directories currently installed.)
+    Preparing to unpack .../apt-config-auto-update_2.1+nmu1_all.deb ...
+    Unpacking apt-config-auto-update (2.1+nmu1) ...
+    dpkg: error processing archive /var/cache/apt/archives/apt-config-auto-update_2.1+nmu1_all.deb (--unpack):
+     trying to overwrite '/etc/apt/apt.conf.d/10periodic', which is also in package update-notifier-common 3.192.54.6
+    Errors were encountered while processing:
+     /var/cache/apt/archives/apt-config-auto-update_2.1+nmu1_all.deb
+  stdout_lines: <omitted>
+2023-04-01 13:15:31,397 p=37473 u=dan n=ansible |  [ERROR]: User interrupted execution
+
+2023-04-01 13:16:18,193 p=37600 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:16:18,270 p=37600 u=dan n=ansible | TASK [base : Ensure dan exists and is in sudo group name={{ main_user }}, group=sudo, append=True] ********************
+2023-04-01 13:16:18,270 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:18 -0600 (0:00:00.104)       0:00:00.104 ******** 
+2023-04-01 13:16:18,270 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:18 -0600 (0:00:00.103)       0:00:00.103 ******** 
+2023-04-01 13:16:18,656 p=37600 u=dan n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to
+an error in Ansible 2.14.
+
+2023-04-01 13:16:18,657 p=37600 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:16:19,039 p=37600 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:16:19,225 p=37600 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:16:19,236 p=37600 u=dan n=ansible | TASK [base : Install linux tools name=['htop', 'tmux', 'vim', 'tree', 'avahi-daemon', 'unattended-upgrades'], state=present] ***
+2023-04-01 13:16:19,236 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:19 -0600 (0:00:00.966)       0:00:01.070 ******** 
+2023-04-01 13:16:19,236 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:19 -0600 (0:00:00.966)       0:00:01.070 ******** 
+2023-04-01 13:16:20,147 p=37600 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:16:20,366 p=37600 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:16:21,681 p=37600 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:16:21,694 p=37600 u=dan n=ansible | TASK [base : Enable unattend upgrades name=unattended-upgrades, enabled=True, state=started] **************************
+2023-04-01 13:16:21,694 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:21 -0600 (0:00:02.457)       0:00:03.528 ******** 
+2023-04-01 13:16:21,694 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:21 -0600 (0:00:02.457)       0:00:03.527 ******** 
+2023-04-01 13:16:22,819 p=37600 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:16:23,165 p=37600 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:16:24,278 p=37600 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:16:24,305 p=37600 u=dan n=ansible | TASK [base : Set timezone to America/Denver name={{ timezone }}] ******************************************************
+2023-04-01 13:16:24,306 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:24 -0600 (0:00:02.611)       0:00:06.140 ******** 
+2023-04-01 13:16:24,306 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:24 -0600 (0:00:02.611)       0:00:06.139 ******** 
+2023-04-01 13:16:24,729 p=37600 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:16:24,906 p=37600 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:16:25,298 p=37600 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:16:25,492 p=37600 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:16:25,507 p=37600 u=dan n=ansible | TASK [ssh : Make dan/.ssh folder if needed path=/home/{{ main_user }}/.ssh, owner=dan, group=dan, mode=448, state=directory] ***
+2023-04-01 13:16:25,507 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:25 -0600 (0:00:01.201)       0:00:07.341 ******** 
+2023-04-01 13:16:25,507 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:25 -0600 (0:00:01.200)       0:00:07.340 ******** 
+2023-04-01 13:16:25,526 p=37600 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-04-01 13:16:25,527 p=37600 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => 
+  msg: 'The field ''become_pass'' has an invalid value, which includes an undefined variable. The error was: ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined. ''dans_server_pass'' is undefined'
+2023-04-01 13:16:25,979 p=37600 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => changed=false 
+  msg: 'There was an issue creating /home/dan/.ssh as requested: [Errno 13] Permission denied: b''/home/dan/.ssh'''
+  path: /home/dan/.ssh
+2023-04-01 13:16:25,979 p=37600 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 13:16:25,979 p=37600 u=dan n=ansible | dans-nas.lan               : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:16:25,979 p=37600 u=dan n=ansible | dans-pisrv.lan             : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 7 seconds
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:25 -0600 (0:00:00.473)       0:00:07.814 ******** 
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | base : Enable unattend upgrades -------------------------------------------------------------------------------- 2.61s
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | base : Install linux tools ------------------------------------------------------------------------------------- 2.46s
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | base : Set timezone to America/Denver -------------------------------------------------------------------------- 1.20s
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | base : Ensure dan exists and is in sudo group ------------------------------------------------------------------ 0.97s
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | ssh : Make dan/.ssh folder if needed --------------------------------------------------------------------------- 0.47s
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | Saturday 01 April 2023  13:16:25 -0600 (0:00:00.473)       0:00:07.814 ******** 
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | base -------------------------------------------------------------------- 7.24s
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | ssh --------------------------------------------------------------------- 0.47s
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 13:16:25,980 p=37600 u=dan n=ansible | total ------------------------------------------------------------------- 7.71s
+2023-04-01 13:23:07,522 p=38258 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:23:07,599 p=38258 u=dan n=ansible | TASK [base : Ensure dan exists and is in sudo group name={{ main_user }}, group=sudo, append=True] ********************
+2023-04-01 13:23:07,599 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:07 -0600 (0:00:00.104)       0:00:00.104 ******** 
+2023-04-01 13:23:07,599 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:07 -0600 (0:00:00.104)       0:00:00.104 ******** 
+2023-04-01 13:23:08,275 p=38258 u=dan n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to
+an error in Ansible 2.14.
+
+2023-04-01 13:23:08,276 p=38258 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:23:09,644 p=38258 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:23:10,937 p=38258 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:23:10,948 p=38258 u=dan n=ansible | TASK [base : Install linux tools name=['htop', 'tmux', 'vim', 'tree', 'avahi-daemon', 'unattended-upgrades'], state=present] ***
+2023-04-01 13:23:10,948 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:10 -0600 (0:00:03.349)       0:00:03.453 ******** 
+2023-04-01 13:23:10,949 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:10 -0600 (0:00:03.349)       0:00:03.453 ******** 
+2023-04-01 13:23:11,852 p=38258 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:23:12,085 p=38258 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:23:13,394 p=38258 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:23:13,418 p=38258 u=dan n=ansible | TASK [base : Enable unattend upgrades name=unattended-upgrades, enabled=True, state=started] **************************
+2023-04-01 13:23:13,418 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:13 -0600 (0:00:02.469)       0:00:05.923 ******** 
+2023-04-01 13:23:13,418 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:13 -0600 (0:00:02.469)       0:00:05.923 ******** 
+2023-04-01 13:23:14,564 p=38258 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:23:14,817 p=38258 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:23:15,906 p=38258 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:23:15,925 p=38258 u=dan n=ansible | TASK [base : Set timezone to America/Denver name={{ timezone }}] ******************************************************
+2023-04-01 13:23:15,925 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:15 -0600 (0:00:02.506)       0:00:08.430 ******** 
+2023-04-01 13:23:15,925 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:15 -0600 (0:00:02.506)       0:00:08.429 ******** 
+2023-04-01 13:23:16,324 p=38258 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:23:16,493 p=38258 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:23:16,882 p=38258 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:23:17,099 p=38258 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:23:17,174 p=38258 u=dan n=ansible | TASK [ssh : Make dan/.ssh folder if needed path=/home/{{ main_user }}/.ssh, owner=dan, group=dan, mode=448, state=directory] ***
+2023-04-01 13:23:17,174 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:17 -0600 (0:00:01.248)       0:00:09.679 ******** 
+2023-04-01 13:23:17,174 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:17 -0600 (0:00:01.248)       0:00:09.678 ******** 
+2023-04-01 13:23:17,443 p=38258 u=dan n=ansible | fatal: [dans-nas.lan]: FAILED! => changed=false 
+  gid: 27
+  group: sudo
+  mode: '0700'
+  msg: chgrp failed
+  owner: dan
+  path: /home/dan/.ssh
+  size: 4096
+  state: directory
+  uid: 1000
+2023-04-01 13:23:17,620 p=38258 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => changed=false 
+  msg: 'There was an issue creating /home/dan/.ssh as requested: [Errno 13] Permission denied: b''/home/dan/.ssh'''
+  path: /home/dan/.ssh
+2023-04-01 13:23:17,800 p=38258 u=dan n=ansible | fatal: [dans-pisrv.lan]: FAILED! => changed=false 
+  gid: 27
+  group: sudo
+  mode: '0700'
+  msg: chgrp failed
+  owner: dan
+  path: /home/dan/.ssh
+  size: 4096
+  state: directory
+  uid: 1000
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | dans-nas.lan               : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | dans-pisrv.lan             : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 10 seconds
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:17 -0600 (0:00:00.627)       0:00:10.306 ******** 
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | base : Ensure dan exists and is in sudo group ------------------------------------------------------------------ 3.35s
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | base : Enable unattend upgrades -------------------------------------------------------------------------------- 2.51s
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | base : Install linux tools ------------------------------------------------------------------------------------- 2.47s
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | base : Set timezone to America/Denver -------------------------------------------------------------------------- 1.25s
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | ssh : Make dan/.ssh folder if needed --------------------------------------------------------------------------- 0.63s
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | Saturday 01 April 2023  13:23:17 -0600 (0:00:00.627)       0:00:10.306 ******** 
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | base -------------------------------------------------------------------- 9.57s
+2023-04-01 13:23:17,801 p=38258 u=dan n=ansible | ssh --------------------------------------------------------------------- 0.63s
+2023-04-01 13:23:17,802 p=38258 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 13:23:17,802 p=38258 u=dan n=ansible | total ------------------------------------------------------------------ 10.20s
+2023-04-01 13:24:00,523 p=38438 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:24:00,599 p=38438 u=dan n=ansible | TASK [base : Ensure dan exists and is in sudo group name={{ main_user }}, group=sudo, append=True] ********************
+2023-04-01 13:24:00,600 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:00 -0600 (0:00:00.103)       0:00:00.103 ******** 
+2023-04-01 13:24:00,600 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:00 -0600 (0:00:00.103)       0:00:00.103 ******** 
+2023-04-01 13:24:00,995 p=38438 u=dan n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to
+an error in Ansible 2.14.
+
+2023-04-01 13:24:00,995 p=38438 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:24:01,363 p=38438 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:24:01,582 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:24:01,604 p=38438 u=dan n=ansible | TASK [base : Install linux tools name=['htop', 'tmux', 'vim', 'tree', 'avahi-daemon', 'unattended-upgrades'], state=present] ***
+2023-04-01 13:24:01,604 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:01 -0600 (0:00:01.004)       0:00:01.108 ******** 
+2023-04-01 13:24:01,604 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:01 -0600 (0:00:01.004)       0:00:01.108 ******** 
+2023-04-01 13:24:02,524 p=38438 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:24:02,759 p=38438 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:24:04,051 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:24:04,074 p=38438 u=dan n=ansible | TASK [base : Enable unattend upgrades name=unattended-upgrades, enabled=True, state=started] **************************
+2023-04-01 13:24:04,074 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:04 -0600 (0:00:02.469)       0:00:03.578 ******** 
+2023-04-01 13:24:04,074 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:04 -0600 (0:00:02.469)       0:00:03.577 ******** 
+2023-04-01 13:24:05,213 p=38438 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:24:05,480 p=38438 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:24:06,549 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:24:06,561 p=38438 u=dan n=ansible | TASK [base : Set timezone to America/Denver name={{ timezone }}] ******************************************************
+2023-04-01 13:24:06,561 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:06 -0600 (0:00:02.487)       0:00:06.065 ******** 
+2023-04-01 13:24:06,562 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:06 -0600 (0:00:02.487)       0:00:06.065 ******** 
+2023-04-01 13:24:06,954 p=38438 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:24:07,162 p=38438 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:24:07,511 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:24:07,718 p=38438 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:24:07,791 p=38438 u=dan n=ansible | TASK [ssh : Make dan/.ssh folder if needed path=/home/{{ main_user }}/.ssh, owner=dan, group=dan, mode=448, state=directory] ***
+2023-04-01 13:24:07,791 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:07 -0600 (0:00:01.229)       0:00:07.295 ******** 
+2023-04-01 13:24:07,791 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:07 -0600 (0:00:01.229)       0:00:07.294 ******** 
+2023-04-01 13:24:08,078 p=38438 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-01 13:24:08,253 p=38438 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => changed=false 
+  gid: 0
+  group: root
+  mode: '0755'
+  msg: 'chgrp failed: failed to look up group dan'
+  owner: dan
+  path: /home/dan/.ssh
+  size: 4096
+  state: directory
+  uid: 1001
+2023-04-01 13:24:08,452 p=38438 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-04-01 13:24:08,476 p=38438 u=dan n=ansible | TASK [ssh : Copy the authorized_keys file src=authorized_keys, dest=/home/{{ main_user }}/.ssh/authorized_keys, owner=dan, group=dan, mode=384] ***
+2023-04-01 13:24:08,476 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:08 -0600 (0:00:00.684)       0:00:07.980 ******** 
+2023-04-01 13:24:08,476 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:08 -0600 (0:00:00.684)       0:00:07.979 ******** 
+2023-04-01 13:24:09,116 p=38438 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-01 13:24:09,977 p=38438 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-04-01 13:24:09,988 p=38438 u=dan n=ansible | TASK [ssh : Copy the ssh_config file src=ssh_config.conf, dest=/etc/ssh/ssh_config.d/hard.conf, owner=root, group=root, mode=292] ***
+2023-04-01 13:24:09,988 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:09 -0600 (0:00:01.511)       0:00:09.491 ******** 
+2023-04-01 13:24:09,988 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:09 -0600 (0:00:01.511)       0:00:09.491 ******** 
+2023-04-01 13:24:10,447 p=38438 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:24:11,260 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:24:11,271 p=38438 u=dan n=ansible | TASK [ssh : Copy the sshd_config file src=sshd_config.conf, dest=/etc/ssh/sshd_config.d/hard.conf, owner=root, group=root, mode=265] ***
+2023-04-01 13:24:11,271 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:11 -0600 (0:00:01.283)       0:00:10.775 ******** 
+2023-04-01 13:24:11,271 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:11 -0600 (0:00:01.283)       0:00:10.775 ******** 
+2023-04-01 13:24:11,731 p=38438 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:24:12,533 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:24:12,632 p=38438 u=dan n=ansible | RUNNING HANDLER [ssh : restart sshd name=sshd, state=restarted] *******************************************************
+2023-04-01 13:24:12,632 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:12 -0600 (0:00:01.360)       0:00:12.136 ******** 
+2023-04-01 13:24:12,632 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:12 -0600 (0:00:01.360)       0:00:12.135 ******** 
+2023-04-01 13:24:13,477 p=38438 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-01 13:24:15,049 p=38438 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-04-01 13:24:15,148 p=38438 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:24:15,162 p=38438 u=dan n=ansible | TASK [Gathering Facts ] ***********************************************************************************************
+2023-04-01 13:24:15,162 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:15 -0600 (0:00:02.529)       0:00:14.665 ******** 
+2023-04-01 13:24:15,162 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:15 -0600 (0:00:02.529)       0:00:14.665 ******** 
+2023-04-01 13:24:16,039 p=38438 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:24:17,521 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:24:17,625 p=38438 u=dan n=ansible | TASK [observium : Install snmp name=snmpd, state=present] *************************************************************
+2023-04-01 13:24:17,625 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:17 -0600 (0:00:02.463)       0:00:17.129 ******** 
+2023-04-01 13:24:17,625 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:17 -0600 (0:00:02.463)       0:00:17.129 ******** 
+2023-04-01 13:24:18,467 p=38438 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:24:19,935 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:24:19,950 p=38438 u=dan n=ansible | TASK [observium : Copy snmp config file src=snmpd.conf, dest=/etc/snmp/snmpd.conf, owner=root, group=root, mode=0600] ***
+2023-04-01 13:24:19,950 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:19 -0600 (0:00:02.324)       0:00:19.453 ******** 
+2023-04-01 13:24:19,950 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:19 -0600 (0:00:02.324)       0:00:19.453 ******** 
+2023-04-01 13:24:20,404 p=38438 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:24:21,209 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:24:21,236 p=38438 u=dan n=ansible | TASK [observium : Enable snmp name=snmpd, enabled=True] ***************************************************************
+2023-04-01 13:24:21,237 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:21 -0600 (0:00:01.286)       0:00:20.740 ******** 
+2023-04-01 13:24:21,237 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:21 -0600 (0:00:01.286)       0:00:20.740 ******** 
+2023-04-01 13:24:21,630 p=38438 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:24:22,292 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:24:22,319 p=38438 u=dan n=ansible | TASK [observium : Include ufw _raw_params=ufw.yml] ********************************************************************
+2023-04-01 13:24:22,320 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:22 -0600 (0:00:01.082)       0:00:21.823 ******** 
+2023-04-01 13:24:22,320 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:22 -0600 (0:00:01.082)       0:00:21.823 ******** 
+2023-04-01 13:24:22,405 p=38438 u=dan n=ansible | included: /home/dan/Documents/Ansible/plays/roles/observium/tasks/ufw.yml for dans-pisrv.lan, dans-nas.lan
+2023-04-01 13:24:22,429 p=38438 u=dan n=ansible | TASK [observium : Allow snmp rule=allow, port=snmp, src={{ item }}, proto=udp] ****************************************
+2023-04-01 13:24:22,429 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:22 -0600 (0:00:00.109)       0:00:21.933 ******** 
+2023-04-01 13:24:22,429 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:22 -0600 (0:00:00.109)       0:00:21.932 ******** 
+2023-04-01 13:24:23,066 p=38438 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.10.0/24)
+2023-04-01 13:24:23,607 p=38438 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.1.0/24)
+2023-04-01 13:24:24,121 p=38438 u=dan n=ansible | ok: [dans-nas.lan] => (item=100.0.0.0/8)
+2023-04-01 13:24:24,267 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.10.0/24)
+2023-04-01 13:24:25,935 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.1.0/24)
+2023-04-01 13:24:27,571 p=38438 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=100.0.0.0/8)
+2023-04-01 13:24:27,587 p=38438 u=dan n=ansible | TASK [observium : reload ufw state=reloaded] **************************************************************************
+2023-04-01 13:24:27,587 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:27 -0600 (0:00:05.158)       0:00:27.091 ******** 
+2023-04-01 13:24:27,587 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:27 -0600 (0:00:05.158)       0:00:27.091 ******** 
+2023-04-01 13:24:28,021 p=38438 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-01 13:24:32,507 p=38438 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-04-01 13:24:32,664 p=38438 u=dan n=ansible | PLAY [all] ************************************************************************************************************
+2023-04-01 13:24:32,809 p=38438 u=dan n=ansible | TASK [crowdsec : install required packages name=['python3-dnf', 'yum-utils'], state=present] **************************
+2023-04-01 13:24:32,810 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:32 -0600 (0:00:05.222)       0:00:32.313 ******** 
+2023-04-01 13:24:32,810 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:32 -0600 (0:00:05.222)       0:00:32.313 ******** 
+2023-04-01 13:24:32,829 p=38438 u=dan n=ansible | fatal: [dans-desktop.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/home/dan/Documents/Ansible/plays/roles/crowdsec/tasks/main.yml': line 3, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+    # tasks file for crowdsec
+    - name: install required packages
+      ^ here
+2023-04-01 13:24:32,843 p=38438 u=dan n=ansible | skipping: [dans-pisrv.lan]
+2023-04-01 13:24:32,864 p=38438 u=dan n=ansible | fatal: [dans-macbook.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/home/dan/Documents/Ansible/plays/roles/crowdsec/tasks/main.yml': line 3, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+    # tasks file for crowdsec
+    - name: install required packages
+      ^ here
+2023-04-01 13:24:32,878 p=38438 u=dan n=ansible | skipping: [dans-nas.lan]
+2023-04-01 13:24:32,892 p=38438 u=dan n=ansible | fatal: [dans-proxmox.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/home/dan/Documents/Ansible/plays/roles/crowdsec/tasks/main.yml': line 3, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+    # tasks file for crowdsec
+    - name: install required packages
+      ^ here
+2023-04-01 13:24:32,900 p=38438 u=dan n=ansible | fatal: [dans-mini.lan]: FAILED! => 
+  msg: |-
+    The conditional check 'ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'' failed. The error was: error while evaluating conditional (ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'): 'ansible_distribution' is undefined. 'ansible_distribution' is undefined
+  
+    The error appears to be in '/home/dan/Documents/Ansible/plays/roles/crowdsec/tasks/main.yml': line 3, column 3, but may
+    be elsewhere in the file depending on the exact syntax problem.
+  
+    The offending line appears to be:
+  
+    # tasks file for crowdsec
+    - name: install required packages
+      ^ here
+2023-04-01 13:24:32,914 p=38438 u=dan n=ansible | TASK [crowdsec : add crowdsec apt-key url=https://packagecloud.io/crowdsec/crowdsec/gpgkey, state=present] ************
+2023-04-01 13:24:32,914 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:32 -0600 (0:00:00.104)       0:00:32.417 ******** 
+2023-04-01 13:24:32,914 p=38438 u=dan n=ansible | Saturday 01 April 2023  13:24:32 -0600 (0:00:00.104)       0:00:32.417 ******** 
+2023-04-01 13:24:34,188 p=38438 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-01 13:24:36,231 p=38438 u=dan n=ansible |  [ERROR]: User interrupted execution
+
+2023-04-01 13:25:10,021 p=38811 u=dan n=ansible | ERROR! the playbook: plays/full.ym could not be found
+2023-04-01 13:25:13,278 p=38822 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:25:13,356 p=38822 u=dan n=ansible | TASK [base : Ensure dan exists and is in sudo group name={{ main_user }}, group=sudo, append=True] ********************
+2023-04-01 13:25:13,356 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:13 -0600 (0:00:00.105)       0:00:00.105 ******** 
+2023-04-01 13:25:13,356 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:13 -0600 (0:00:00.105)       0:00:00.105 ******** 
+2023-04-01 13:25:13,762 p=38822 u=dan n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to
+an error in Ansible 2.14.
+
+2023-04-01 13:25:13,762 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:14,319 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:15,217 p=38822 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:25:15,239 p=38822 u=dan n=ansible | TASK [base : Install linux tools name=['htop', 'tmux', 'vim', 'tree', 'avahi-daemon', 'unattended-upgrades'], state=present] ***
+2023-04-01 13:25:15,239 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:15 -0600 (0:00:01.883)       0:00:01.989 ******** 
+2023-04-01 13:25:15,240 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:15 -0600 (0:00:01.883)       0:00:01.988 ******** 
+2023-04-01 13:25:16,158 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:16,324 p=38822 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:25:17,687 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:17,710 p=38822 u=dan n=ansible | TASK [base : Enable unattend upgrades name=unattended-upgrades, enabled=True, state=started] **************************
+2023-04-01 13:25:17,710 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:17 -0600 (0:00:02.470)       0:00:04.460 ******** 
+2023-04-01 13:25:17,710 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:17 -0600 (0:00:02.470)       0:00:04.459 ******** 
+2023-04-01 13:25:18,841 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:19,068 p=38822 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:25:20,191 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:20,214 p=38822 u=dan n=ansible | TASK [base : Set timezone to America/Denver name={{ timezone }}] ******************************************************
+2023-04-01 13:25:20,215 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:20 -0600 (0:00:02.504)       0:00:06.964 ******** 
+2023-04-01 13:25:20,215 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:20 -0600 (0:00:02.504)       0:00:06.964 ******** 
+2023-04-01 13:25:20,595 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:20,797 p=38822 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:25:21,174 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:21,386 p=38822 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:25:21,461 p=38822 u=dan n=ansible | TASK [ssh : Make dan/.ssh folder if needed path=/home/{{ main_user }}/.ssh, owner=dan, group=dan, mode=448, state=directory] ***
+2023-04-01 13:25:21,461 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:21 -0600 (0:00:01.246)       0:00:08.210 ******** 
+2023-04-01 13:25:21,461 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:21 -0600 (0:00:01.246)       0:00:08.210 ******** 
+2023-04-01 13:25:21,753 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:21,950 p=38822 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => changed=false 
+  gid: 0
+  group: root
+  mode: '0755'
+  msg: 'chgrp failed: failed to look up group dan'
+  owner: dan
+  path: /home/dan/.ssh
+  size: 4096
+  state: directory
+  uid: 1001
+2023-04-01 13:25:22,115 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:22,133 p=38822 u=dan n=ansible | TASK [ssh : Copy the authorized_keys file src=authorized_keys, dest=/home/{{ main_user }}/.ssh/authorized_keys, owner=dan, group=dan, mode=384] ***
+2023-04-01 13:25:22,133 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:22 -0600 (0:00:00.672)       0:00:08.882 ******** 
+2023-04-01 13:25:22,133 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:22 -0600 (0:00:00.672)       0:00:08.882 ******** 
+2023-04-01 13:25:22,668 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:23,438 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:23,449 p=38822 u=dan n=ansible | TASK [ssh : Copy the ssh_config file src=ssh_config.conf, dest=/etc/ssh/ssh_config.d/hard.conf, owner=root, group=root, mode=292] ***
+2023-04-01 13:25:23,449 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:23 -0600 (0:00:01.316)       0:00:10.199 ******** 
+2023-04-01 13:25:23,449 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:23 -0600 (0:00:01.316)       0:00:10.198 ******** 
+2023-04-01 13:25:23,900 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:24,711 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:24,722 p=38822 u=dan n=ansible | TASK [ssh : Copy the sshd_config file src=sshd_config.conf, dest=/etc/ssh/sshd_config.d/hard.conf, owner=root, group=root, mode=265] ***
+2023-04-01 13:25:24,722 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:24 -0600 (0:00:01.273)       0:00:11.472 ******** 
+2023-04-01 13:25:24,722 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:24 -0600 (0:00:01.273)       0:00:11.471 ******** 
+2023-04-01 13:25:25,175 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:25,982 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:26,114 p=38822 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:25:26,128 p=38822 u=dan n=ansible | TASK [Gathering Facts ] ***********************************************************************************************
+2023-04-01 13:25:26,128 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:26 -0600 (0:00:01.406)       0:00:12.878 ******** 
+2023-04-01 13:25:26,129 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:26 -0600 (0:00:01.406)       0:00:12.877 ******** 
+2023-04-01 13:25:27,027 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:28,406 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:28,475 p=38822 u=dan n=ansible | TASK [observium : Install snmp name=snmpd, state=present] *************************************************************
+2023-04-01 13:25:28,475 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:28 -0600 (0:00:02.346)       0:00:15.224 ******** 
+2023-04-01 13:25:28,475 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:28 -0600 (0:00:02.346)       0:00:15.224 ******** 
+2023-04-01 13:25:29,308 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:30,782 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:30,797 p=38822 u=dan n=ansible | TASK [observium : Copy snmp config file src=snmpd.conf, dest=/etc/snmp/snmpd.conf, owner=root, group=root, mode=0600] ***
+2023-04-01 13:25:30,797 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:30 -0600 (0:00:02.321)       0:00:17.546 ******** 
+2023-04-01 13:25:30,797 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:30 -0600 (0:00:02.321)       0:00:17.546 ******** 
+2023-04-01 13:25:31,261 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:32,057 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:32,071 p=38822 u=dan n=ansible | TASK [observium : Enable snmp name=snmpd, enabled=True] ***************************************************************
+2023-04-01 13:25:32,071 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:32 -0600 (0:00:01.274)       0:00:18.821 ******** 
+2023-04-01 13:25:32,071 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:32 -0600 (0:00:01.274)       0:00:18.820 ******** 
+2023-04-01 13:25:32,459 p=38822 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-01 13:25:33,124 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-01 13:25:33,146 p=38822 u=dan n=ansible | TASK [observium : Include ufw _raw_params=ufw.yml] ********************************************************************
+2023-04-01 13:25:33,146 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:33 -0600 (0:00:01.074)       0:00:19.896 ******** 
+2023-04-01 13:25:33,146 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:33 -0600 (0:00:01.074)       0:00:19.895 ******** 
+2023-04-01 13:25:33,214 p=38822 u=dan n=ansible | included: /home/dan/Documents/Ansible/plays/roles/observium/tasks/ufw.yml for dans-pisrv.lan, dans-nas.lan
+2023-04-01 13:25:33,237 p=38822 u=dan n=ansible | TASK [observium : Allow snmp rule=allow, port=snmp, src={{ item }}, proto=udp] ****************************************
+2023-04-01 13:25:33,237 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:33 -0600 (0:00:00.090)       0:00:19.987 ******** 
+2023-04-01 13:25:33,237 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:33 -0600 (0:00:00.090)       0:00:19.986 ******** 
+2023-04-01 13:25:33,869 p=38822 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.10.0/24)
+2023-04-01 13:25:34,407 p=38822 u=dan n=ansible | ok: [dans-nas.lan] => (item=10.10.1.0/24)
+2023-04-01 13:25:34,930 p=38822 u=dan n=ansible | ok: [dans-nas.lan] => (item=100.0.0.0/8)
+2023-04-01 13:25:34,988 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.10.0/24)
+2023-04-01 13:25:37,657 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=10.10.1.0/24)
+2023-04-01 13:25:39,312 p=38822 u=dan n=ansible | ok: [dans-pisrv.lan] => (item=100.0.0.0/8)
+2023-04-01 13:25:39,343 p=38822 u=dan n=ansible | TASK [observium : reload ufw state=reloaded] **************************************************************************
+2023-04-01 13:25:39,343 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:39 -0600 (0:00:06.105)       0:00:26.092 ******** 
+2023-04-01 13:25:39,343 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:39 -0600 (0:00:06.105)       0:00:26.092 ******** 
+2023-04-01 13:25:39,795 p=38822 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-01 13:25:44,242 p=38822 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | PLAY RECAP ************************************************************************************************************
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | dans-nas.lan               : ok=15   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | dans-pisrv.lan             : ok=15   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 31 seconds
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:44 -0600 (0:00:05.057)       0:00:31.149 ******** 
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | observium : Allow snmp ----------------------------------------------------------------------------------------- 6.11s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | observium : reload ufw ----------------------------------------------------------------------------------------- 5.06s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | base : Enable unattend upgrades -------------------------------------------------------------------------------- 2.50s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | base : Install linux tools ------------------------------------------------------------------------------------- 2.47s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------ 2.35s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | observium : Install snmp --------------------------------------------------------------------------------------- 2.32s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | base : Ensure dan exists and is in sudo group ------------------------------------------------------------------ 1.88s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | ssh : Copy the sshd_config file -------------------------------------------------------------------------------- 1.41s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | ssh : Copy the authorized_keys file ---------------------------------------------------------------------------- 1.32s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | observium : Copy snmp config file ------------------------------------------------------------------------------ 1.27s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | ssh : Copy the ssh_config file --------------------------------------------------------------------------------- 1.27s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | base : Set timezone to America/Denver -------------------------------------------------------------------------- 1.25s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | observium : Enable snmp ---------------------------------------------------------------------------------------- 1.07s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | ssh : Make dan/.ssh folder if needed --------------------------------------------------------------------------- 0.67s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | observium : Include ufw ---------------------------------------------------------------------------------------- 0.09s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | Saturday 01 April 2023  13:25:44 -0600 (0:00:05.057)       0:00:31.149 ******** 
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | =============================================================================== 
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | observium -------------------------------------------------------------- 15.93s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | base -------------------------------------------------------------------- 8.10s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | ssh --------------------------------------------------------------------- 4.67s
+2023-04-01 13:25:44,400 p=38822 u=dan n=ansible | gather_facts ------------------------------------------------------------ 2.35s
+2023-04-01 13:25:44,401 p=38822 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-01 13:25:44,401 p=38822 u=dan n=ansible | total ------------------------------------------------------------------ 31.04s
+2023-04-01 13:27:23,118 p=39202 u=dan n=ansible | [WARNING]: While constructing a mapping from /home/dan/Documents/Ansible/files/inventory.yml, line 44, column 9, found
+a duplicate dict key (dans-nas.lan). Using last defined value only.
+
+2023-04-01 13:27:23,273 p=39202 u=dan n=ansible | PLAY [servers] ********************************************************************************************************
+2023-04-01 13:27:23,352 p=39202 u=dan n=ansible | TASK [base : Ensure dan exists and is in sudo group name={{ main_user }}, group=sudo, append=True] ********************
+2023-04-01 13:27:23,352 p=39202 u=dan n=ansible | Saturday 01 April 2023  13:27:23 -0600 (0:00:00.106)       0:00:00.106 ******** 
+2023-04-01 13:27:23,352 p=39202 u=dan n=ansible | Saturday 01 April 2023  13:27:23 -0600 (0:00:00.106)       0:00:00.106 ******** 
+2023-04-01 13:27:23,657 p=39202 u=dan n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host dans-nas.lan: Failed to connect to the host via
+ssh: Received disconnect from 10.10.10.16 port 22:2: Too many authentication failures  Disconnected from 10.10.10.16
+port 22
+
+2023-04-01 13:27:23,716 p=39202 u=dan n=ansible | [WARNING]: Unhandled error in Python interpreter discovery for host dans-pisrv.lan: Failed to connect to the host via
+ssh: Received disconnect from 10.10.10.8 port 22:2: Too many authentication failures  Disconnected from 10.10.10.8
+port 22
+
+2023-04-01 13:27:23,865 p=39202 u=dan n=ansible | fatal: [dans-nas.lan]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "dans-nas.lan". Make sure this host can be reached over ssh: Received disconnect from 10.10.10.16 port 22:2: Too many authentication failures
+    Disconnected from 10.10.10.16 port 22
+  unreachable: true
+2023-04-01 13:27:23,971 p=39202 u=dan n=ansible | fatal: [dans-pisrv.lan]: UNREACHABLE! => changed=false 
+  msg: |-
+    Data could not be sent to remote host "dans-pisrv.lan". Make sure this host can be reached over ssh: Received disconnect from 10.10.10.8 port 22:2: Too many authentication failures
+    Disconnected from 10.10.10.8 port 22
+  unreachable: true
+2023-04-01 13:27:25,293 p=39202 u=dan n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to
+an error in Ansible 2.14.
+
+2023-04-01 13:27:25,293 p=39202 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:27:25,315 p=39202 u=dan n=ansible | TASK [base : Install linux tools name=['htop', 'tmux', 'vim', 'tree', 'avahi-daemon', 'unattended-upgrades'], state=present] ***
+2023-04-01 13:27:25,316 p=39202 u=dan n=ansible | Saturday 01 April 2023  13:27:25 -0600 (0:00:01.963)       0:00:02.070 ******** 
+2023-04-01 13:27:25,316 p=39202 u=dan n=ansible | Saturday 01 April 2023  13:27:25 -0600 (0:00:01.963)       0:00:02.069 ******** 
+2023-04-01 13:27:26,376 p=39202 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-01 13:27:26,387 p=39202 u=dan n=ansible | TASK [base : Enable unattend upgrades name=unattended-upgrades, enabled=True, state=started] **************************
+2023-04-01 13:27:26,388 p=39202 u=dan n=ansible | Saturday 01 April 2023  13:27:26 -0600 (0:00:01.071)       0:00:03.142 ******** 
+2023-04-01 13:27:26,388 p=39202 u=dan n=ansible | Saturday 01 April 2023  13:27:26 -0600 (0:00:01.071)       0:00:03.141 ******** 
+2023-04-01 13:27:27,314 p=39202 u=dan n=ansible |  [ERROR]: User interrupted execution
+
