@@ -17,6 +17,12 @@ all:
       ansible_become_pass: '{{ dans_prox_pass }}'
       ansible_user: root
 
+    dans-git.lan: 
+      ansible_become_pass: '{{ dans_server_pass }}'
+
+    dans-observium.lan: 
+      ansible_become_pass: '{{ dans_server_pass }}'
+
     dans-mini.lan: 
       ansible_become_pass: '{{ dans_prox_pass }}'
       ansible_user: root
@@ -32,20 +38,22 @@ all:
     full:
       hosts:
         dans-desktop.lan:
-#        dans-mini.lan:
         dans-mini.lan: 
         dans-proxmox.lan: 
         dans-pisrv.lan:
         dans-macbook.lan:
         dans-nas.lan:
+        dans-git.lan: 
+        dans-observium.lan: 
     servers:
       hosts:
-#        dans-mini.lan:
+        dans-mini.lan:
         dans-nas.lan: 
         dans-pisrv.lan:
-        dans-nas.lan:
+        dans-proxmox.lan: 
         ec2-54-186-211-240.us-west-2.compute.amazonaws.com:
-
+        dans-git.lan: 
+        dans-observium.lan: 
     proxmox:
       hosts: 
         dans-proxmox.lan:
@@ -63,4 +71,3 @@ all:
     macbook:
       hosts:
         dans-macbook.lan:
-
