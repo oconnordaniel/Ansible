@@ -7,7 +7,7 @@
   file: 
     path: /home/{{ main_user }}/.ssh
     owner: dan
-    group: dan
+    group: sudo
     mode: 0700
     state: directory
 
@@ -18,7 +18,7 @@
     src: authorized_keys 
     dest: /home/{{ main_user }}/.ssh/authorized_keys
     owner: dan
-    group: dan
+    group: sudo
     mode: 0600
   notify: restart sshd
 
@@ -31,6 +31,7 @@
     owner: root
     group: root
     mode: 0444
+  notify: restart sshd
 
 # Copy sshd_config
 - name: Copy the sshd_config file
@@ -41,3 +42,4 @@
     owner: root
     group: root
     mode: 0411
+  notify: restart sshd

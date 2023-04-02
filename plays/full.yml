@@ -3,6 +3,7 @@
   gather_facts: true
   roles: 
     - base
+    - ufw
   tags: base
   vars_files:
   - ../files/variables.yml

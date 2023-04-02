@@ -3351,3 +3351,204 @@ and you have requested strict checking.  Host key verification failed.
 2023-04-02 09:38:13,571 p=13033 u=dan n=ansible | gather_facts ------------------------------------------------------------ 2.85s
 2023-04-02 09:38:13,571 p=13033 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 2023-04-02 09:38:13,572 p=13033 u=dan n=ansible | total ------------------------------------------------------------------ 10.19s
+2023-04-02 10:07:45,920 p=15099 u=dan n=ansible | PLAY [servers] *********************************************************************************************************************************************************************************************************************************
+2023-04-02 10:07:46,464 p=15099 u=dan n=ansible | PLAY [servers] *********************************************************************************************************************************************************************************************************************************
+2023-04-02 10:07:46,478 p=15099 u=dan n=ansible | TASK [Gathering Facts ] ************************************************************************************************************************************************************************************************************************
+2023-04-02 10:07:46,478 p=15099 u=dan n=ansible | Sunday 02 April 2023  10:07:46 -0600 (0:00:00.586)       0:00:00.586 ********** 
+2023-04-02 10:07:46,478 p=15099 u=dan n=ansible | Sunday 02 April 2023  10:07:46 -0600 (0:00:00.585)       0:00:00.585 ********** 
+2023-04-02 10:07:47,840 p=15099 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-02 10:07:48,015 p=15099 u=dan n=ansible | ok: [dans-observium.lan]
+2023-04-02 10:07:48,080 p=15099 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-02 10:07:48,110 p=15099 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-02 10:07:48,163 p=15099 u=dan n=ansible | ok: [dans-git.lan]
+2023-04-02 10:07:49,543 p=15099 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-02 10:07:50,799 p=15099 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-02 10:07:51,007 p=15099 u=dan n=ansible | TASK [ssh : Make dan/.ssh folder if needed path=/home/{{ main_user }}/.ssh, owner=dan, group=dan, mode=448, state=directory] *******************************************************************************************************************
+2023-04-02 10:07:51,007 p=15099 u=dan n=ansible | Sunday 02 April 2023  10:07:51 -0600 (0:00:04.529)       0:00:05.115 ********** 
+2023-04-02 10:07:51,007 p=15099 u=dan n=ansible | Sunday 02 April 2023  10:07:51 -0600 (0:00:04.529)       0:00:05.115 ********** 
+2023-04-02 10:07:51,243 p=15099 u=dan n=ansible | changed: [dans-proxmox.lan]
+2023-04-02 10:07:51,322 p=15099 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-02 10:07:51,327 p=15099 u=dan n=ansible | changed: [dans-observium.lan]
+2023-04-02 10:07:51,338 p=15099 u=dan n=ansible | fatal: [dans-mini.lan]: FAILED! => changed=false 
+  gid: 0
+  group: root
+  mode: '0755'
+  msg: 'chgrp failed: failed to look up group dan'
+  owner: dan
+  path: /home/dan/.ssh
+  size: 2
+  state: directory
+  uid: 1000
+2023-04-02 10:07:51,414 p=15099 u=dan n=ansible | changed: [dans-git.lan]
+2023-04-02 10:07:51,540 p=15099 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => changed=false 
+  gid: 0
+  group: root
+  mode: '0755'
+  msg: 'chgrp failed: failed to look up group dan'
+  owner: dan
+  path: /home/dan/.ssh
+  size: 4096
+  state: directory
+  uid: 1001
+2023-04-02 10:07:51,669 p=15099 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-02 10:07:51,701 p=15099 u=dan n=ansible | TASK [ssh : Copy the authorized_keys file src=authorized_keys, dest=/home/{{ main_user }}/.ssh/authorized_keys, owner=dan, group=dan, mode=384] ************************************************************************************************
+2023-04-02 10:07:51,701 p=15099 u=dan n=ansible | Sunday 02 April 2023  10:07:51 -0600 (0:00:00.694)       0:00:05.809 ********** 
+2023-04-02 10:07:51,702 p=15099 u=dan n=ansible | Sunday 02 April 2023  10:07:51 -0600 (0:00:00.694)       0:00:05.809 ********** 
+2023-04-02 10:07:52,269 p=15099 u=dan n=ansible | changed: [dans-proxmox.lan]
+2023-04-02 10:07:52,309 p=15099 u=dan n=ansible | changed: [dans-observium.lan]
+2023-04-02 10:07:52,332 p=15099 u=dan n=ansible | changed: [dans-git.lan]
+2023-04-02 10:07:52,488 p=15099 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-02 10:07:52,671 p=15099 u=dan n=ansible |  [ERROR]: User interrupted execution
+
+2023-04-02 10:08:18,123 p=15273 u=dan n=ansible | PLAY [servers] *********************************************************************************************************************************************************************************************************************************
+2023-04-02 10:08:18,678 p=15273 u=dan n=ansible | PLAY [servers] *********************************************************************************************************************************************************************************************************************************
+2023-04-02 10:08:18,691 p=15273 u=dan n=ansible | TASK [Gathering Facts ] ************************************************************************************************************************************************************************************************************************
+2023-04-02 10:08:18,691 p=15273 u=dan n=ansible | Sunday 02 April 2023  10:08:18 -0600 (0:00:00.596)       0:00:00.596 ********** 
+2023-04-02 10:08:18,691 p=15273 u=dan n=ansible | Sunday 02 April 2023  10:08:18 -0600 (0:00:00.595)       0:00:00.595 ********** 
+2023-04-02 10:08:19,718 p=15273 u=dan n=ansible | ok: [dans-observium.lan]
+2023-04-02 10:08:19,754 p=15273 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-02 10:08:19,906 p=15273 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-02 10:08:19,923 p=15273 u=dan n=ansible | ok: [dans-git.lan]
+2023-04-02 10:08:19,958 p=15273 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-02 10:08:20,252 p=15273 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-02 10:08:21,344 p=15273 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-02 10:08:21,537 p=15273 u=dan n=ansible | TASK [ssh : Make dan/.ssh folder if needed path=/home/{{ main_user }}/.ssh, owner=dan, group=sudo, mode=448, state=directory] ******************************************************************************************************************
+2023-04-02 10:08:21,537 p=15273 u=dan n=ansible | Sunday 02 April 2023  10:08:21 -0600 (0:00:02.845)       0:00:03.442 ********** 
+2023-04-02 10:08:21,537 p=15273 u=dan n=ansible | Sunday 02 April 2023  10:08:21 -0600 (0:00:02.845)       0:00:03.441 ********** 
+2023-04-02 10:08:21,776 p=15273 u=dan n=ansible | changed: [dans-proxmox.lan]
+2023-04-02 10:08:21,819 p=15273 u=dan n=ansible | changed: [dans-mini.lan]
+2023-04-02 10:08:21,855 p=15273 u=dan n=ansible | changed: [dans-observium.lan]
+2023-04-02 10:08:21,862 p=15273 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-02 10:08:21,881 p=15273 u=dan n=ansible | changed: [dans-git.lan]
+2023-04-02 10:08:22,101 p=15273 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-02 10:08:22,208 p=15273 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-04-02 10:08:22,235 p=15273 u=dan n=ansible | TASK [ssh : Copy the authorized_keys file src=authorized_keys, dest=/home/{{ main_user }}/.ssh/authorized_keys, owner=dan, group=dan, mode=384] ************************************************************************************************
+2023-04-02 10:08:22,235 p=15273 u=dan n=ansible | Sunday 02 April 2023  10:08:22 -0600 (0:00:00.697)       0:00:04.140 ********** 
+2023-04-02 10:08:22,235 p=15273 u=dan n=ansible | Sunday 02 April 2023  10:08:22 -0600 (0:00:00.697)       0:00:04.139 ********** 
+2023-04-02 10:08:22,647 p=15273 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-02 10:08:22,776 p=15273 u=dan n=ansible | ok: [dans-observium.lan]
+2023-04-02 10:08:22,782 p=15273 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-02 10:08:22,894 p=15273 u=dan n=ansible | fatal: [dans-mini.lan]: FAILED! => changed=false 
+  checksum: 3acbfa50d17a0112fcf3d51c36220da71aab5ce9
+  gid: 0
+  group: root
+  mode: '0644'
+  msg: 'chgrp failed: failed to look up group dan'
+  owner: dan
+  path: /home/dan/.ssh/authorized_keys
+  size: 279
+  state: file
+  uid: 1000
+2023-04-02 10:08:22,954 p=15273 u=dan n=ansible | ok: [dans-git.lan]
+2023-04-02 10:08:23,566 p=15273 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-02 10:08:23,877 p=15273 u=dan n=ansible | fatal: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]: FAILED! => changed=false 
+  checksum: 3acbfa50d17a0112fcf3d51c36220da71aab5ce9
+  gid: 0
+  group: root
+  mode: '0644'
+  msg: 'chgrp failed: failed to look up group dan'
+  owner: dan
+  path: /home/dan/.ssh/authorized_keys
+  size: 279
+  state: file
+  uid: 1001
+2023-04-02 10:08:23,891 p=15273 u=dan n=ansible | TASK [ssh : Copy the ssh_config file src=ssh_config.conf, dest=/etc/ssh/ssh_config.d/hard.conf, owner=root, group=root, mode=292] **************************************************************************************************************
+2023-04-02 10:08:23,891 p=15273 u=dan n=ansible | Sunday 02 April 2023  10:08:23 -0600 (0:00:01.655)       0:00:05.795 ********** 
+2023-04-02 10:08:23,891 p=15273 u=dan n=ansible | Sunday 02 April 2023  10:08:23 -0600 (0:00:01.655)       0:00:05.795 ********** 
+2023-04-02 10:08:24,266 p=15273 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-02 10:08:24,391 p=15273 u=dan n=ansible | changed: [dans-observium.lan]
+2023-04-02 10:08:24,396 p=15273 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-02 10:08:24,435 p=15273 u=dan n=ansible | changed: [dans-git.lan]
+2023-04-02 10:08:25,206 p=15273 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-02 10:08:25,234 p=15273 u=dan n=ansible | TASK [ssh : Copy the sshd_config file src=sshd_config.conf, dest=/etc/ssh/sshd_config.d/hard.conf, owner=root, group=root, mode=265] ***********************************************************************************************************
+2023-04-02 10:08:25,234 p=15273 u=dan n=ansible | Sunday 02 April 2023  10:08:25 -0600 (0:00:01.343)       0:00:07.138 ********** 
+2023-04-02 10:08:25,234 p=15273 u=dan n=ansible | Sunday 02 April 2023  10:08:25 -0600 (0:00:01.343)       0:00:07.138 ********** 
+2023-04-02 10:08:25,645 p=15273 u=dan n=ansible | changed: [dans-proxmox.lan]
+2023-04-02 10:08:25,711 p=15273 u=dan n=ansible |  [ERROR]: User interrupted execution
+
+2023-04-02 10:08:52,697 p=15493 u=dan n=ansible | PLAY [servers] *********************************************************************************************************************************************************************************************************************************
+2023-04-02 10:08:53,231 p=15493 u=dan n=ansible | PLAY [servers] *********************************************************************************************************************************************************************************************************************************
+2023-04-02 10:08:53,244 p=15493 u=dan n=ansible | TASK [Gathering Facts ] ************************************************************************************************************************************************************************************************************************
+2023-04-02 10:08:53,244 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:08:53 -0600 (0:00:00.575)       0:00:00.575 ********** 
+2023-04-02 10:08:53,244 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:08:53 -0600 (0:00:00.574)       0:00:00.574 ********** 
+2023-04-02 10:08:54,294 p=15493 u=dan n=ansible | ok: [dans-observium.lan]
+2023-04-02 10:08:54,309 p=15493 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-02 10:08:54,473 p=15493 u=dan n=ansible | ok: [dans-git.lan]
+2023-04-02 10:08:54,483 p=15493 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-02 10:08:54,828 p=15493 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-02 10:08:54,942 p=15493 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-02 10:08:55,892 p=15493 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-02 10:08:56,084 p=15493 u=dan n=ansible | TASK [ssh : Make dan/.ssh folder if needed path=/home/{{ main_user }}/.ssh, owner=dan, group=sudo, mode=448, state=directory] ******************************************************************************************************************
+2023-04-02 10:08:56,084 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:08:56 -0600 (0:00:02.839)       0:00:03.415 ********** 
+2023-04-02 10:08:56,084 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:08:56 -0600 (0:00:02.839)       0:00:03.414 ********** 
+2023-04-02 10:08:56,324 p=15493 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-02 10:08:56,368 p=15493 u=dan n=ansible | ok: [dans-mini.lan]
+2023-04-02 10:08:56,405 p=15493 u=dan n=ansible | ok: [dans-observium.lan]
+2023-04-02 10:08:56,405 p=15493 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-02 10:08:56,438 p=15493 u=dan n=ansible | ok: [dans-git.lan]
+2023-04-02 10:08:56,684 p=15493 u=dan n=ansible | ok: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-02 10:08:56,760 p=15493 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-02 10:08:56,789 p=15493 u=dan n=ansible | TASK [ssh : Copy the authorized_keys file src=authorized_keys, dest=/home/{{ main_user }}/.ssh/authorized_keys, owner=dan, group=sudo, mode=384] ***********************************************************************************************
+2023-04-02 10:08:56,789 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:08:56 -0600 (0:00:00.704)       0:00:04.119 ********** 
+2023-04-02 10:08:56,789 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:08:56 -0600 (0:00:00.704)       0:00:04.119 ********** 
+2023-04-02 10:08:57,194 p=15493 u=dan n=ansible | changed: [dans-proxmox.lan]
+2023-04-02 10:08:57,299 p=15493 u=dan n=ansible | changed: [dans-mini.lan]
+2023-04-02 10:08:57,334 p=15493 u=dan n=ansible | changed: [dans-observium.lan]
+2023-04-02 10:08:57,344 p=15493 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-02 10:08:57,419 p=15493 u=dan n=ansible | changed: [dans-git.lan]
+2023-04-02 10:08:58,129 p=15493 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-04-02 10:08:58,172 p=15493 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-02 10:08:58,186 p=15493 u=dan n=ansible | TASK [ssh : Copy the ssh_config file src=ssh_config.conf, dest=/etc/ssh/ssh_config.d/hard.conf, owner=root, group=root, mode=292] **************************************************************************************************************
+2023-04-02 10:08:58,187 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:08:58 -0600 (0:00:01.397)       0:00:05.517 ********** 
+2023-04-02 10:08:58,187 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:08:58 -0600 (0:00:01.397)       0:00:05.516 ********** 
+2023-04-02 10:08:58,585 p=15493 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-02 10:08:58,705 p=15493 u=dan n=ansible | changed: [dans-mini.lan]
+2023-04-02 10:08:58,720 p=15493 u=dan n=ansible | ok: [dans-observium.lan]
+2023-04-02 10:08:58,798 p=15493 u=dan n=ansible | ok: [dans-git.lan]
+2023-04-02 10:08:59,510 p=15493 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-02 10:08:59,916 p=15493 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-02 10:09:00,052 p=15493 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-02 10:09:00,080 p=15493 u=dan n=ansible | TASK [ssh : Copy the sshd_config file src=sshd_config.conf, dest=/etc/ssh/sshd_config.d/hard.conf, owner=root, group=root, mode=265] ***********************************************************************************************************
+2023-04-02 10:09:00,080 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:09:00 -0600 (0:00:01.893)       0:00:07.410 ********** 
+2023-04-02 10:09:00,080 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:09:00 -0600 (0:00:01.893)       0:00:07.410 ********** 
+2023-04-02 10:09:00,489 p=15493 u=dan n=ansible | ok: [dans-proxmox.lan]
+2023-04-02 10:09:00,515 p=15493 u=dan n=ansible | changed: [dans-mini.lan]
+2023-04-02 10:09:00,615 p=15493 u=dan n=ansible | ok: [dans-nas.lan]
+2023-04-02 10:09:00,626 p=15493 u=dan n=ansible | ok: [dans-observium.lan]
+2023-04-02 10:09:00,703 p=15493 u=dan n=ansible | ok: [dans-git.lan]
+2023-04-02 10:09:01,444 p=15493 u=dan n=ansible | ok: [dans-pisrv.lan]
+2023-04-02 10:09:02,058 p=15493 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-02 10:09:02,363 p=15493 u=dan n=ansible | RUNNING HANDLER [ssh : restart sshd name=sshd, state=restarted] ********************************************************************************************************************************************************************************
+2023-04-02 10:09:02,363 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:09:02 -0600 (0:00:02.282)       0:00:09.693 ********** 
+2023-04-02 10:09:02,363 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:09:02 -0600 (0:00:02.282)       0:00:09.693 ********** 
+2023-04-02 10:09:02,865 p=15493 u=dan n=ansible | changed: [dans-proxmox.lan]
+2023-04-02 10:09:02,897 p=15493 u=dan n=ansible | changed: [dans-observium.lan]
+2023-04-02 10:09:02,929 p=15493 u=dan n=ansible | changed: [dans-nas.lan]
+2023-04-02 10:09:03,084 p=15493 u=dan n=ansible | changed: [dans-mini.lan]
+2023-04-02 10:09:03,133 p=15493 u=dan n=ansible | changed: [dans-git.lan]
+2023-04-02 10:09:03,636 p=15493 u=dan n=ansible | changed: [dans-pisrv.lan]
+2023-04-02 10:09:04,199 p=15493 u=dan n=ansible | changed: [ec2-54-186-211-240.us-west-2.compute.amazonaws.com]
+2023-04-02 10:09:04,438 p=15493 u=dan n=ansible | PLAY [servers] *********************************************************************************************************************************************************************************************************************************
+2023-04-02 10:09:05,091 p=15493 u=dan n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************************************************************
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | dans-git.lan               : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | dans-mini.lan              : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | dans-nas.lan               : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | dans-observium.lan         : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | dans-pisrv.lan             : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | dans-proxmox.lan           : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | ec2-54-186-211-240.us-west-2.compute.amazonaws.com : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 12 seconds
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:09:05 -0600 (0:00:02.729)       0:00:12.422 ********** 
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | =============================================================================== 
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 2.84s
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | ssh : restart sshd ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 2.73s
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | ssh : Copy the sshd_config file --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 2.28s
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | ssh : Copy the ssh_config file ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 1.89s
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | ssh : Copy the authorized_keys file ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 1.40s
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | ssh : Make dan/.ssh folder if needed ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 0.70s
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | Sunday 02 April 2023  10:09:05 -0600 (0:00:02.729)       0:00:12.422 ********** 
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | =============================================================================== 
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | ssh --------------------------------------------------------------------- 9.01s
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | gather_facts ------------------------------------------------------------ 2.84s
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-04-02 10:09:05,092 p=15493 u=dan n=ansible | total ------------------------------------------------------------------ 11.85s
